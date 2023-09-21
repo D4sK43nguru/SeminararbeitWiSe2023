@@ -8,8 +8,9 @@
   "main": "thesis_main.tex",
   "scripts": {
     "test": "sh compile.sh",
-    "compile": "arara thesis_main",
-    "version": "npm run compile && git add thesis_main.pdf",
+    "compile": "arara thesis_main && git add thesis_main.pdf",
+    "changelog": "npm run gitmoji-changelog",
+    "version": "npm run compile && npm run changelog",
     "postversion": "git push && git push --tags"
   },
   "repository": {
