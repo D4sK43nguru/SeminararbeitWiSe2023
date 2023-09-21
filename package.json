@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "gitmoji-changelog": "^2.3.0"
   },
   "name": "seminararbeit-sose-2023",
   "description": "[![Build](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml/badge.svg)](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml)",
@@ -9,8 +8,7 @@
   "scripts": {
     "test": "sh compile.sh",
     "compile": "arara thesis_main && git add thesis_main.pdf",
-    "changelog": "npm run gitmoji-changelog",
-    "version": "npm run compile && npm run changelog",
+    "version": "npm run compile",
     "postversion": "git push && git push --tags"
   },
   "repository": {
