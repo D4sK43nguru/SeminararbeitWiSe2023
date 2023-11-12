@@ -208,20 +208,6 @@
     date = {2009-08-03},
 }
 
-@standard{NIST:800132,
-    title = {Reccomendation for Password-Based Key Derivation},
-    titleaddon = {Part 1: Storage Applications},
-    language = {english},
-    location = {United States of America},
-    url = {https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf},
-    organization = {\ac{NIST}},
-    author = {Sönmez Turan, Meltem and Barker, Elaine and Burr, William and Chen, Lily},
-    date = {2010-12-22},
-    abstract = {This Reccomendation specifies techniques for the derivation of master keys from passwords or passphrases to protect stored electronic data or data protection keys.},
-    keywords = {Password-Based Key Derivation Functions, Salt, Iteration Count, Protection of data in storage},
-    number = {SP 800-132},
-}
-
 @ARTICLE{Auth:2017,
     author = {Kim, Hokeun and Lee, Edward A.},
     journal = {IT Professional},
@@ -571,4 +557,33 @@
     number = {},
     pages = {57143-57179},
     doi = {10.1109/ACCESS.2022.3174679}
+}
+
+@standard{NIST:800207,
+    title = {Zero Trust Architecture},
+    language = {english},
+    author = {Rose, Scott and Borchert, Oliver and Mitchell, Stu and Connelly, Sean},
+    date = {2020-08},
+    organization = {\ac{NIST}},
+    number = {SP 800-207},
+    url = {https://doi.org/10.6028/NIST.SP.800-207},
+    location = {United States of America},
+    keywords = {architecture; cybersecurity; enterprise; network security; zero trust.},
+    abstract = {Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network-based perimeters to focus on users, assets, and resources. A zero trust architecture (ZTA) uses zero trust principles to plan industrial and enterprise infrastructure and workflows. Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established. Zero trust is a response to enterprise network trends that include remote users, bring your own device (BYOD), and cloud-based assets that are not located within an enterpriseowned network boundary. Zero trust focuses on protecting resources (assets, services, workflows, network accounts, etc.), not network segments, as the network location is no longer seen as the prime component to the security posture of the resource. This document contains an abstract definition of zero trust architecture (ZTA) and gives general deployment models and use cases where zero trust could improve an enterprise’s overall information technology security posture.},
+    pages = {59},
+}
+
+
+@standard{NIST:800132,
+    title = {Reccomendation for Password-Based Key Derivation},
+    titleaddon = {Part 1: Storage Applications},
+    language = {english},
+    location = {United States of America},
+    url = {https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf},
+    organization = {\ac{NIST}},
+    author = {Sönmez Turan, Meltem and Barker, Elaine and Burr, William and Chen, Lily},
+    date = {2010-12-22},
+    abstract = {This Reccomendation specifies techniques for the derivation of master keys from passwords or passphrases to protect stored electronic data or data protection keys.},
+    keywords = {Password-Based Key Derivation Functions, Salt, Iteration Count, Protection of data in storage},
+    number = {SP 800-132},
 }
