@@ -8,5 +8,34 @@
 In den letzten Jahren hat die Anzahl der Cyberkriminalitätsfälle in Deutschland stark zugenommen.
 So wurden zwar für das Jahr 2022 ein Rückgang von ungefähr 6.5\% gegenüber dem Vorjahr an erfassten Fällen aufgezeichnet, jedoch bildet sich in dem Zeitraum von 2012 bis 2022 ein Gesamtwachstum von ungefähr 112\% an erfassten Cyberkriminalitätsfällen\autocite[\vglf][]{bka-cyberkriminalitaet}.
 
-\subsection[Arten von Cyberbedrohungen]{Arten von Cyberbedrohungen - Malware, Phishing, DDos}\label{subsec:arten-von-cyberbedrohungen---malware-phishing-ddos}
+Analog zu der Anzahl der aufgezeichneten Fälle steigen auch die Kosten, die Cyberkriminalität verursacht, sowie die Ausgaben die für IT-Sicherheit in Deutschland vorgenommen werden stetig.
+2018 haben Cyberkriminalitätsvorfälle deutschen Unternehmen durchschnittlich 13,12 Millionen US-Dollar\footnote{Heutiger Wert ungefähr 10,23 Millionen Euro} gekostet, was gegenüber dem Vorjahr ein Zuwachs von ungefähr 18\% darstellt\autocite[\vglf][]{accenture-cyberkrime-kosten}.
+2021 wurden so ungefähr 6,9 Milliarden Euro für IT-Sicherheitsmaßnahmen ausgegeben, was einem Zuwachs von ungefähr 22\% gegenüber dem Vorjahr entspricht\autocite[\vglf][]{bitkom-itsicherheit}, davon wurden geschätzt 1,7 Milliarden Euro für Softwarelösungen ausgegeben\autocite[\vglf][]{bitkom-itsicherheit-segment}.
 
+\subsection[Arten von Cyberbedrohungen]{Arten von Cyberbedrohungen - Malware, Phishing, DDos}\label{subsec:arten-von-cyberbedrohungen---malware-phishing-ddos}
+Wie die Kosten und Ausgaben für Cyberkriminalität steigen auch die möglichen Methoden der Angreifer.
+
+\begin{figure}
+    \centering
+    \pgfplotstableread[col sep=comma]{src/Datensatz/Cybercrime.csv}\datatable
+
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=\textwidth, % Diagramm auf Seitenbreite einstellen
+            stack plots=y,
+            area style,
+            xlabel={Jahr},
+            ylabel={Prozentsatz},
+            legend pos=north west,
+            xtick={2016,2017,2018,2019,2020,2021,2022}, % Ganzzahlige Jahre
+%            xticklabel style={rotate=45, anchor=near xticklabel},
+        ]
+            \foreach \col in {Kreditkartenbetrug, Erpressung, Identitatsdiebstahl, Anlagebetrug, Nichtzahlung, Datenschutzverletzung, Phishing, technischer_Support} {
+                \addplot table[x=Jahr, y=\col] {\datatable} \closedcycle;
+            }
+
+            \legend{Kreditkartenbetrug, Erpressung, Identitätsdiebstahl, Anlagebetrug, Nichtzahlung/Nichtlieferung, Datenschutzverletzung, Phishing, technischer Support}
+        \end{axis}
+        \caption{Anteil einzelner Cyberkriminalitätstypen}
+    \end{tikzpicture}\label{fig:cybercrime-chart}
+\end{figure}
