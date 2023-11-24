@@ -14,28 +14,20 @@ Analog zu der Anzahl der aufgezeichneten Fälle steigen auch die Kosten, die Cyb
 
 \subsection[Arten von Cyberbedrohungen]{Arten von Cyberbedrohungen - Malware, Phishing, DDos}\label{subsec:arten-von-cyberbedrohungen---malware-phishing-ddos}
 Wie die Kosten und Ausgaben für Cyberkriminalität steigen auch die möglichen Methoden der Angreifer.
+\autoref{fig:cybercrime-chart-absolute} zeigt, dass die Anzahl der aufgezeichneten Fälle von Cyberkriminalität fast stetig zunimmt.
 
-\begin{figure}
+\begin{figure}[htpb]
     \centering
-    \pgfplotstableread[col sep=comma]{src/Datensatz/Cybercrime.csv}\datatable
+    \includegraphics[width = 0.75\linewidth]{src/abbildungen/Aufgezeichnete_Cyberkriminalitaet}
+    \caption[Erfasste Fälle von Cyberkriminalität nach Typ]{Erfasste Fälle von Cyberkriminalität nach Typ\footnotemark\newline Stand September 2023}
+    \label{fig:cybercrime-chart-absolute}
+\end{figure}\ \footnotetext{\cite[\vglf][]{statista-cybersecurity-cybercrime}}
+\todo[inline]{Eventuell Float entfernen, um Fußnote anzupassen!}
+Besonders der Anteil, der Phishingangriffe hat im Vergleich zu 2018 stark zugenommen, wie \autoref{fig:cybercrime-chart-relative} darstellt.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width = 0.75\linewidth]{src/abbildungen/Anteile_Cyberkriminalitaet}
+    \caption[Anteil einzelner Cyberkriminalitätstypen]{Anteil einzelner Cyberkriminalitätstypen\footnotemark\newline Stand September 2023}
+    \label{fig:cybercrime-chart-relative}
+\end{figure}\ \footnotetext{\cite[\vglf][]{statista-cybersecurity-cybercrime}}
 
-    \begin{tikzpicture}
-        \begin{axis}[
-            width=\textwidth, % Diagramm auf Seitenbreite einstellen
-            stack plots=y,
-            area style,
-            xlabel={Jahr},
-            ylabel={Prozentsatz},
-            legend pos=north west,
-            xtick={2016,2017,2018,2019,2020,2021,2022}, % Ganzzahlige Jahre
-%            xticklabel style={rotate=45, anchor=near xticklabel},
-        ]
-            \foreach \col in {Kreditkartenbetrug, Erpressung, Identitatsdiebstahl, Anlagebetrug, Nichtzahlung, Datenschutzverletzung, Phishing, technischer_Support} {
-                \addplot table[x=Jahr, y=\col] {\datatable} \closedcycle;
-            }
-
-            \legend{Kreditkartenbetrug, Erpressung, Identitätsdiebstahl, Anlagebetrug, Nichtzahlung/Nichtlieferung, Datenschutzverletzung, Phishing, technischer Support}
-        \end{axis}
-        \caption{Anteil einzelner Cyberkriminalitätstypen}
-    \end{tikzpicture}\label{fig:cybercrime-chart}
-\end{figure}
