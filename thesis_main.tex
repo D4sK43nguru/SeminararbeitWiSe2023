@@ -1,4 +1,3 @@
-% arara: latexmk: { clean: all }
 % arara: lualatex
 % arara: biber
 % arara: makeindex
@@ -58,7 +57,7 @@
 % labelfont auf fett: (Tabelle x.y:, Abbildung: x.y)
 % font auf fett: eigentliche Bezeichnung der Abbildung oder Tabelle
 % Fettschrift laut Leitfaden 2018 S. 45
-\usepackage[labelfont=bf, font=bf]{caption}
+\usepackage[labelfont=bf, font=bf, format=hang, justification=justified]{caption}
 \usepackage{enumitem}
 \usepackage{mathptmx}
 % \usepackage{minted} %Kann für schöneres Syntax Highlighting genutzt werden. ACHTUNG: Python muss installiert sein.
@@ -503,7 +502,7 @@
     \newpage
 
     \printbibliography[nottype=online,heading=bibintoc,title={Literaturverzeichnis}]
-	\newpage
+    \newpage
     \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
 % neue Seite für Internetquellen-Verzeichnis
