@@ -1,8 +1,23 @@
 \newpage
 \section[Zero-Trust Architektur im Detail]{\ac{zta} im Detail}\label{sec:zta-im-detail}
+Da in einer \ac{zta} keinem Gerät und keiner Anwendung vertraut wird, alle aber unterstützt werden, sind verschiedene Maßnahmen notwendig, die erwünschte und oft erforderte Sicherheit zu garantieren.
+Dies geschieht durch regelmäßiges Überprüfen der \gls{authentizitaet} und \gls{autorisierung} der Systeme.\autocite[\vglf][\pagef 3]{dsilvia-2021}
 
 \subsection{Komponenten und Architektur von Zero-Trust}\label{subsec:komponenten-und-architektur-von-zero-trust}
+Es gibt verschiedene Methoden, eine \ac{zta} einzurichten, von denen viele das Konzept teilen, die Kontrolle nahe an den Anwendungen und Nutzern zu halten, anstatt sie in der Netzwerkinfrastruktur auszulagern.\autocite[\vglf][\pagef 4]{buck-2021}
+Drei der Grundkomponenten einer \ac{zta} sind \glsdisp{authentizitaet}{Anwendungsauthentifizierung}, \glsdisp{authentizitaet}{Gerätauthentifizierung} und Vertrauen, da eine \ac{zta} im Gegensatz zu anderen Sicherheitsinfrastrukturen die \gls{authentizitaet} regelmäßig überprüft, die Nutzergeräte überprüft und Widersprüchlichkeiten in Anwendungen der Nutzer überwacht und erkennt.\autocite[\vglf][\pagef 3]{dsilvia-2021}
 
 \subsection{Implementierung von Zero-Trust in Unternehmen}\label{subsec:implementierung-von-zero-trust-in-unternehmen}
+Eine \ac{zta} kann sowohl in einem neuen System implementiert werden, als auch in einem bereits bestehenden eingearbeitet werden.
+Hierfür nennen D'Silvia und Ambawade\autocite[\vglf][\pagef 3]{dsilvia-2021} folgende Annahmen:
+\begin{itemize}
+    \item Das LAN innerhalb eines Netzwerkes sollte nicht implizit als vertraute Zone behandelt werden.
+    \item Mit dem aktuellen Trend, dass in Unternehmen \ac{byod} eingeführt wird, wird davon ausgegangen, dass Geräte, die mit dem Netzwerk verbunden sind, keine Instanz des Unternehmens sind, da jedes Gerät manipuliert werden kann.
+    \item Ressourcen sind niemals vertrauenswürdig, \dah vom Standpunkt der Sicherheit aus gesehen muss jede Ressource kontinuierlich bewertet werden und darf nur solange genutzt werden, wie sie benötigt wird.
+    \item Cloud-Dienste sind ein wesentlicher Bestandteil jedes Unternehmensnetzwerkes geworden und verdeutlichen, dass nicht alle Unternehmensressourcen innerhalb der Unternehmensinfrastruktur liegen.
+    \item Alle Verbindungsanfragen von außerhalb des Unternehmens, wie \zb Remote Desktop, müssen \glsdisp{autorisierung}{autorisiert} und \glsdisp{authentizitaet}{authentifiziert} werden.
+    Alle Daten müssen mit Respekt, \gls{vertraulichkeit}, \gls{integritaet} und \glsdisp{authentizitaet}{Quellenauthentifizierung} übertragen werden
+    \item Ausgehend der obigen Annahmen ist es essenziell, dass alle Ressourcen und Kommunikation zwischen dem Unternehmen und externer Infrastruktur einer ständigen Sicherheitsstrategie unterliegen muss.
+\end{itemize}
 
 \subsection{Vor- und Nachteile von Zero-Trust}\label{subsec:vor-und-nachteile-von-zero-trust}
