@@ -3,8 +3,27 @@
 
 \section{Grundlagen}\label{sec:grundlagen}
 \subsection[Definition einer Zero-Trust-Architektur]{Definition einer \ac{zta}}\label{subsec:definition-einer-zta}
+\ac{zt} bezeichnet eine Sammlung an Maßnahmen der Cybersicherheit, welche darauf basieren, die Verteidigungen von netzwerkbasierten Umfängen auf Nutzer und Ressourcen umzuleiten\autocite[\vglf][\pagef 4]{NIST:800207}.
+Darüber hinaus ist eine \ac{zta} ein Cybersicherheitsplan einer Einrichtung, der die Konzepte von \ac{zt} umsetzt und Zugriffsrichtlinien, Arbeitsabläufe und Beziehungen zwischen Komponenten umfasst.\autocite[\vglf][\pagef 4]{NIST:800207}
+
+Das Ziel einer \ac{zta} ist es, \glsdisp{autorisierung}{unautorisierten} Zugriff auf Daten und Leistungen zu verhindern und hierbei das Durchführen der Zugriffskontrollen so detailliert wie möglich zu gestalten.
+
 \subsection{Entwicklung und historischer Hintergrund}\label{subsec:entwicklung-und-historischer-hintergrund}
+\todo[inline]{Überlegen, ob dieses Kapitel im Text bleibt oder entfent wird}
 
 \subsection{Prinzipien und Konzepte von Zero-Trust}\label{subsec:prinzipien-und-konzepte-von-zero-trust}
+
+In einem System, welches \ac{zt} implementiert, muss jede Anfrage bevor sie auf die Ressourcen zugreifen kann, in einem \gls{pdp}/\gls{pep} überprüft werden\autocite[\vglf][\pagef 4]{NIST:800207}.
+
+Eine \ac{zta} wird mit dem Gedanken entwickelt und umgesetzt, die folgenden Grundsätze umzusetzen:
+\begin{itemize}
+    \item Alle Datenquellen und Rechenleistungen werden als Ressourcen angesehen,
+    \item Unabhängig der Netzwerkposition ist jegliche Kommunikation gesichert,
+    \item Der Zugriff auf einzelne Ressourcen erfolgt auf einer Pro-Sitzung Grundlage,
+    \item Zugriff auf Ressourcen wird durch dynamische Regelungen festgelegt und kann von verschiedenen Attributen, wie die Identität des \glspl{client} beeinflusst werden,
+    \item Das Unternehmen überwacht und misst die \gls{integritaet} aller eigenen und verbundenen Ressourcen,
+    \item Jegliche Ressourcen \gls{authentifizierung} und \gls{autorisierung} ist dynamisch und erzwungen, bevor Zugriff gewährt werden kann,
+    \item Das Unternehmen sammelt so viele Informationen über den aktuellen Status der Ressourcen, Netzwerkinfrastruktur und Kommunikationen wie möglich und nutzt diese, um die Sicherheit zu erhöhen.\autocite[\vglf][\pagef 6-7]{NIST:800207}\todo[inline]{Eventuell ibidem entfernen mit „\string\makeatletter\string\blx\string@ibidreset\string\makeatother“}
+\end{itemize}
 
 \subsection{Vergleich zu herkömmlichen Sicherheitsansätzen}\label{subsec:vergleich-zu-herkommlichen-sicherheitsansatzen}

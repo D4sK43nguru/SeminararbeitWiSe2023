@@ -1,8 +1,70 @@
 \newpage
 \section[Zero-Trust Architektur im Detail]{\ac{zta} im Detail}\label{sec:zta-im-detail}
+Da in einer \ac{zta} keinem Gerät und keiner Anwendung vertraut wird, alle aber unterstützt werden, sind verschiedene Maßnahmen notwendig, die erwünschte und oft erforderte Sicherheit zu garantieren.
+Dies geschieht durch regelmäßiges Überprüfen der \gls{authentizitaet} und \gls{autorisierung} der Systeme.\autocite[\vglf][\pagef 3]{dsilvia-2021}
 
-\subsection{Komponenten und Architektur von Zero-Trust}\label{subsec:komponenten-und-architektur-von-zero-trust}
+\subsection{Komponenten und Aufbau von Zero-Trust}\label{subsec:komponenten-und-aufbau-von-zero-trust}
+Jede \ac{zta} wird durch 3 Eigenschaften definiert.
+Diese stellen sicher, dass (\romannumeral 1) Auf alle Ressourcen unabhängig ihrer physischen oder logischen Position ein sicherer Zugriff erfolgen muss, (\romannumeral 2) Strenge Zugriffskontrollmaßnahmen bestehen, und zuletzt (\romannumeral 3) Jeglicher Netzwerkverkehr erfasst und aufgezeichnet wird.\autocite[\vglf][\pagef 2]{dsilvia-2021}
+
+\subsubsection{Komponenten einer Zero-Trust Architektur}
+Es gibt verschiedene Methoden, eine \ac{zta} einzurichten, von denen viele das Konzept teilen, die Kontrolle nahe an den Anwendungen und Nutzern zu halten, anstatt sie in der Netzwerkinfrastruktur auszulagern.\autocite[\vglf][\pagef 4]{buck-2021}
+Drei der Grundmethoden einer \ac{zta} sind \glsdisp{authentizitaet}{Anwendungsauthentifizierung}, \glsdisp{authentizitaet}{Gerätauthentifizierung} und Vertrauen, da eine \ac{zta} im Gegensatz zu anderen Sicherheitsinfrastrukturen die \gls{authentizitaet} regelmäßig überprüft, die Nutzergeräte überprüft und Widersprüchlichkeiten in Anwendungen der Nutzer überwacht und erkennt.\autocite[\vglf][\pagef 3]{dsilvia-2021}
+
+\ac{zt} sollte nicht als einzelne Technologie gesehen werden, sondern stellt durch viele Anforderungen, Kontrollen und Prinzipien einen umfassenden Schutz dar, welcher selbst bei verschwimmender Grenze zwischen Privatem und Arbeit nicht minder wirkt.\autocite[\vglf][Was sind die Komponenten von Zero Trust]{akamai:online}
+
+\subsubsection{Aufbau einer Zero-Trust Architektur}
+
+Eine \ac{zta} lässt jede Anfrage eine Vertrauensevaluation durchgehen.
+Eine solche Evaluation kann aus den folgenden, von Horne und Nair\autocite[\vglf][\pagef 3]{horne-2021} dargestellten, Schritten bestehen:
+\begin{itemize}
+    \item Vertrauensfaktoren, darunter unter anderem
+    \begin{itemize}
+        \item \glsdisp{authentizitaet}{Nutzerauthentifizierung},
+        \item Nutzerrolle oder -profil,
+        \item \glsdisp{authentizitaet}{Gerätauthentifizierung},
+        \item Geräteart und -status,
+        \item IP-Adresse, \bzw Ort,
+        \item Details der Zugriffsanfrage,
+        \item Verhaltensdaten,
+    \end{itemize}
+    \item Vertrauensalgorithmus,
+    \item Anforderungen und Anforderungsadministrator, mit den folgenden Richtlinien
+    \begin{itemize}
+        \item Vertrauensgrenzwerte,
+        \item Grundsätze zur Einhaltung der Richtlinien,
+        \item Richtlinien für Endgeräte,
+        \item Datenschutzrichtlinien
+    \end{itemize}
+    \item Erlauben oder Ablehnen der Zugriffsanfrage.
+\end{itemize}
+Horne und Nair stellen weiter dar, wie die einzelnen Schritte einer Überprüfung ablaufen.\autocite[\vglf][\pagef 3]{horne-2021}
+\begin{enumerate}
+    \item Dabei wird die Anfrage zunächst auf die einzelnen Faktoren überprüft und evaluiert.
+    \item Anschließend wird aus dem Resultat dieser Evaluation ein Vertrauenswert berechnet, mit welchem die Anfrage überprüft und einzelne Richtlinien zugeschrieben werden.
+    \item Zuletzt wird, sofern ein ausreichender Vertrauenswert vorhanden ist, die Anfrage unter Einhaltung der Richtlinien akzeptiert, andernfalls abgelehnt.
+\end{enumerate}
 
 \subsection{Implementierung von Zero-Trust in Unternehmen}\label{subsec:implementierung-von-zero-trust-in-unternehmen}
+Eine \ac{zta} kann sowohl in einem neuen System implementiert werden, als auch in einem bereits bestehenden eingearbeitet werden.
+Hierfür nennen D'Silvia und Ambawade\autocite[\vglf][\pagef 3]{dsilvia-2021} folgende Annahmen:
+\begin{itemize}
+    \item Das LAN innerhalb eines Netzwerkes sollte nicht implizit als vertraute Zone behandelt werden.
+    \item Mit dem aktuellen Trend, dass in Unternehmen \ac{byod} eingeführt wird, wird davon ausgegangen, dass Geräte, die mit dem Netzwerk verbunden sind, keine Instanz des Unternehmens sind, da jedes Gerät manipuliert werden kann.
+    \item Ressourcen sind niemals vertrauenswürdig, \dah vom Standpunkt der Sicherheit aus gesehen muss jede Ressource kontinuierlich bewertet werden und darf nur solange genutzt werden, wie sie benötigt wird.
+    \item Cloud-Dienste sind ein wesentlicher Bestandteil jedes Unternehmensnetzwerkes geworden und verdeutlichen, dass nicht alle Unternehmensressourcen innerhalb der Unternehmensinfrastruktur liegen.
+    \item Alle Verbindungsanfragen von außerhalb des Unternehmens, wie \zb Remote Desktop, müssen \glsdisp{autorisierung}{autorisiert} und \glsdisp{authentizitaet}{authentifiziert} werden.
+    Alle Daten müssen mit Respekt, \gls{vertraulichkeit}, \gls{integritaet} und \glsdisp{authentizitaet}{Quellenauthentifizierung} übertragen werden.
+    \item Ausgehend der obigen Annahmen ist es essenziell, dass alle Ressourcen und Kommunikation zwischen dem Unternehmen und externer Infrastruktur einer ständigen Sicherheitsstrategie unterliegen muss.
+\end{itemize}
 
 \subsection{Vor- und Nachteile von Zero-Trust}\label{subsec:vor-und-nachteile-von-zero-trust}
+Eine \ac{zta} bietet verschiedenste Vor- und Nachteile, angefangen von den verbesserten Sicherheitsmetriken, endend bei einer komplexeren Infrastruktur.
+Dieser Abschnitt listet und erläutert einzelne dieser Eigenschaften.
+
+\subsubsection{Vorteile}\label{subsubsec:vorteile}
+Bei erfolgreicher Implementierung einer \ac{zta} hat jeder Teil des Netzwerkes nur für ein Minimum der Zeit Zugriff auf das Minimum der erforderten Ressourcen.
+Dies sorgt dafür, dass ein nahezu umfassender Schutz vor Angriffen besteht, welcher besonders Sicherheitslücken in Systemen, die durch, beabsichtigte oder unbeabsichtigte, Vertrauensbrüche entstehen, angreift\autocite[\vglf][\pagef 146]{Edo-2022}.
+
+
+\subsubsection{Nachteile}\label{subsubsec:nachteile}

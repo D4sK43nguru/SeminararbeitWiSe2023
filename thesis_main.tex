@@ -1,4 +1,3 @@
-% arara: latexmk: { clean: all }
 % arara: lualatex
 % arara: biber
 % arara: makeindex
@@ -7,6 +6,7 @@
 % arara: lualatex
 % arara: latexmk: { clean: partial }
 % arara: clean: { extensions: [bbl, glo, gls, glg, ist, suc, syc] }
+
 
 %-----------------------------------
 % Define document and include general packages
@@ -19,6 +19,7 @@
 % Da es aber verschiedene Regelungen je nach Dozent geben kann, werden hier
 % beide Varianten dargestellt.
 \documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}% „oneside“ mit „twoside“ austauschen um beidseitigen Druck zu ermöglichen
+%TC:ignore
 %\documentclass[12pt,oneside,titlepage]{scrartcl}
 
 %-----------------------------------
@@ -49,12 +50,16 @@
 \usepackage{epigraph}
 
 
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat = 1.17}
+
 % Darstellung der Beschriftung von Tabellen und Abbildungen (Leitfaden S. 44)
 % singlelinecheck=false: macht die Caption linksbündig (statt zentriert)
 % labelfont auf fett: (Tabelle x.y:, Abbildung: x.y)
 % font auf fett: eigentliche Bezeichnung der Abbildung oder Tabelle
 % Fettschrift laut Leitfaden 2018 S. 45
-\usepackage[labelfont=bf, font=bf]{caption}
+\usepackage[labelfont=bf, font=bf, format=hang, justification=justified]{caption}
 \usepackage{enumitem}
 \usepackage{mathptmx}
 % \usepackage{minted} %Kann für schöneres Syntax Highlighting genutzt werden. ACHTUNG: Python muss installiert sein.
@@ -390,7 +395,6 @@
 \restylefloat{table}
 \justifying
 
-%TC:ignore
 %-----------------------------------
 % Start the document here:
 %-----------------------------------
@@ -459,7 +463,7 @@
 
     \printglossaries
     \newpage
-%TC:endignore
+
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
 %-----------------------------------
@@ -469,6 +473,7 @@
 %-----------------------------------
 % Kapitel / Inhalte
 %-----------------------------------
+%TC:endignore
 % Die Kapitel werden über folgende Datei eingebunden
     \input{src/skripte/kapitelUebersicht}
 
@@ -499,7 +504,7 @@
     \newpage
 
     \printbibliography[nottype=online,heading=bibintoc,title={Literaturverzeichnis}]
-	\newpage
+    \newpage
     \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
 % neue Seite für Internetquellen-Verzeichnis
