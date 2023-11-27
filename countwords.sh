@@ -1,6 +1,3 @@
-echo "Um dieses Skript zu nutzen muss detex auf dem Rechner installiert sein"
-echo "Unter macOS kann es mit dem folgenden Befehl installiert werden: brew install opendetex"
-
 rm wordcounts.txt 2> /dev/null
 
 detex thesis_main.tex > thesis_main.txt
