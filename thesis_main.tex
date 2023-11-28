@@ -7,6 +7,7 @@
 % arara: latexmk: { clean: partial }
 % arara: clean: { extensions: [bbl, glo, gls, glg, ist, suc, syc] }
 
+
 %-----------------------------------
 % Define document and include general packages
 %-----------------------------------
@@ -18,6 +19,7 @@
 % Da es aber verschiedene Regelungen je nach Dozent geben kann, werden hier
 % beide Varianten dargestellt.
 \documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}% „oneside“ mit „twoside“ austauschen um beidseitigen Druck zu ermöglichen
+%TC:ignore
 %\documentclass[12pt,oneside,titlepage]{scrartcl}
 
 %-----------------------------------
@@ -393,7 +395,6 @@
 \restylefloat{table}
 \justifying
 
-%TC:ignore
 %-----------------------------------
 % Start the document here:
 %-----------------------------------
@@ -462,7 +463,7 @@
 
     \printglossaries
     \newpage
-%TC:endignore
+
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
 %-----------------------------------
@@ -472,6 +473,7 @@
 %-----------------------------------
 % Kapitel / Inhalte
 %-----------------------------------
+%TC:endignore
 % Die Kapitel werden über folgende Datei eingebunden
     \input{src/skripte/kapitelUebersicht}
 
