@@ -288,7 +288,31 @@
 %-----------------------------------
 % Glossar
 %-----------------------------------
+
+% Command to create a glossary entry with correspondent acronym.
+% Args : 1: acronym/name, 2: long name, 3: description
+\newcommand{\newglossaryentrywithacronym}[3]{
+%%% The glossary entry the acronym links to
+    \newglossaryentry{#1_gls}{
+        name={#1},
+        long={#2},
+        description={#3}
+    }
+
+    % Acronym pointing to glossary
+    \newglossaryentry{#1}{
+        type=\acronymtype,
+        name={#1},
+        description={#2},
+        first={#2 (#1)\glsadd{#1_gls}},
+    see=[Glossar:]{#1_gls}
+}
+}
+
 \usepackage{glossaries}
+\usepackage{glossaries-german}
+\usepackage{glossaries-extra}
+\abbreviationstyle[acronym]{long-short}
 \glstoctrue %Auskommentieren, damit das Glossar nicht im Inhaltsverzeichnis angezeigt wird.
 \makeglossaries
 \input{src/abkuerzungen/glossar}
@@ -300,8 +324,8 @@
 
 \makeatletter
 \newcommand{\customlabel}[2]{%
-    \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
-    \hypertarget{#1}{#2}
+\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
+\hypertarget{#1}{#2}
 }
 \makeatother
 
@@ -315,12 +339,12 @@
 \makeatother
 
 \hypersetup{
-    pdfinfo={
-        Title={\myTitel},
-        Subject={\myStudiengang},
-        Author={\myAutor},
-        Build=1.1
-    },
+pdfinfo={
+Title={\myTitel},
+Subject={\myStudiengang},
+Author={\myAutor},
+Build=1.1
+},
 }
 
 
@@ -341,18 +365,18 @@
 % siehe auch: https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
 %-----------------------------------
 \lstset{literate=
-    {á}{{á}}1 {é}{{é}}1 {í}{{í}}1 {ó}{{ó}}1 {ú}{{ú}}1
-    {Á}{{Á}}1 {É}{{É}}1 {Í}{{Í}}1 {Ó}{{Ó}}1 {Ú}{{Ú}}1
-    {à}{{à}}1 {è}{{è}}1 {ì}{{ì}}1 {ò}{{ò}}1 {ù}{{ù}}1
-    {À}{{À}}1 {È}{{É}}1 {Ì}{{Ì}}1 {Ò}{{Ò}}1 {Ù}{{Ù}}1
-    {ä}{{ä}}1 {ë}{{ë}}1 {ï}{{ï}}1 {ö}{{ö}}1 {ü}{{ü}}1
-    {Ä}{{Ä}}1 {Ë}{{Ë}}1 {Ï}{{Ï}}1 {Ö}{{Ö}}1 {Ü}{{Ü}}1
-    {â}{{â}}1 {ê}{{ê}}1 {î}{{î}}1 {ô}{{ô}}1 {û}{{û}}1
-    {Â}{{Â}}1 {Ê}{{Ê}}1 {Î}{{Î}}1 {Ô}{{Ô}}1 {Û}{{Û}}1
-    {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-    {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-    {ç}{{ç}}1 {Ç}{{Ç}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-    {€}{{\EUR}}1 {£}{{\pounds}}1 {„}{{\glqq{}}}1
+{á}{{á}}1 {é}{{é}}1 {í}{{í}}1 {ó}{{ó}}1 {ú}{{ú}}1
+{Á}{{Á}}1 {É}{{É}}1 {Í}{{Í}}1 {Ó}{{Ó}}1 {Ú}{{Ú}}1
+{à}{{à}}1 {è}{{è}}1 {ì}{{ì}}1 {ò}{{ò}}1 {ù}{{ù}}1
+{À}{{À}}1 {È}{{É}}1 {Ì}{{Ì}}1 {Ò}{{Ò}}1 {Ù}{{Ù}}1
+{ä}{{ä}}1 {ë}{{ë}}1 {ï}{{ï}}1 {ö}{{ö}}1 {ü}{{ü}}1
+{Ä}{{Ä}}1 {Ë}{{Ë}}1 {Ï}{{Ï}}1 {Ö}{{Ö}}1 {Ü}{{Ü}}1
+{â}{{â}}1 {ê}{{ê}}1 {î}{{î}}1 {ô}{{ô}}1 {û}{{û}}1
+{Â}{{Â}}1 {Ê}{{Ê}}1 {Î}{{Î}}1 {Ô}{{Ô}}1 {Û}{{Û}}1
+{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+{ç}{{ç}}1 {Ç}{{Ç}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+{€}{{\EUR}}1 {£}{{\pounds}}1 {„}{{\glqq{}}}1
 }
 
 %-----------------------------------
@@ -400,19 +424,19 @@
 %-----------------------------------
 \begin{document}
 
-    \pagenumbering{roman}                                % Seitennumerierung auf römisch umstellen
-    \newcolumntype{C}{>{\centering\arraybackslash}X}     % Neuer Tabellen-Spalten-Typ:
+\pagenumbering{roman}                                % Seitennumerierung auf römisch umstellen
+\newcolumntype{C}{>{\centering\arraybackslash}X}     % Neuer Tabellen-Spalten-Typ:
 %Zentriert und umbrechbar
 
 %-----------------------------------
 % Textcommands
 %-----------------------------------
-    \input{src/skripte/textcommands}
+\input{src/skripte/textcommands}
 
 %-----------------------------------
 % Titlepage
 %-----------------------------------
-    \input{src/kapitel/titelseite}
+\input{src/kapitel/titelseite}
 
 %-----------------------------------
 % Vorwort (optional; bei Verwendung beide Zeilen entkommentieren und unter Inhaltsverzeichnis setcounter entsprechend anpassen)
@@ -424,33 +448,35 @@
 % Inhaltsverzeichnis
 %-----------------------------------
 % Um das Tabellen- und Abbbildungsverzeichnis zu de/aktivieren ganz oben in Documentclass schauen
-    \setcounter{page}{2}
-    \addtocontents{toc}{\protect\enlargethispage{-20mm}} % Die Zeile sorgt dafür, dass das Inhaltsverzeichnisseite auf die zweite Seite gestreckt wird und somit schick aussieht. Das sollte eigentlich automatisch funktionieren. Wer rausfindet wie, kann das gern ändern.
-    \setcounter{tocdepth}{4}
-    \tableofcontents
-    \newpage
+\setcounter{page}{2}
+\addtocontents{toc}{\protect\enlargethispage{-20mm}} % Die Zeile sorgt dafür, dass das Inhaltsverzeichnisseite auf die zweite Seite gestreckt wird und somit schick aussieht. Das sollte eigentlich automatisch funktionieren. Wer rausfindet wie, kann das gern ändern.
+\setcounter{tocdepth}{4}
+\tableofcontents
+\newpage
 
 %-----------------------------------
 % Abbildungsverzeichnis
 %-----------------------------------
-    \renewcommand{\listfigurename}{\abbildungsverzeichnis}
-    \listoffigures
-    \newpage
+\renewcommand{\listfigurename}{\abbildungsverzeichnis}
+\listoffigures
+\newpage
 %-----------------------------------
 % Tabellenverzeichnis
 %-----------------------------------
-    \renewcommand{\listtablename}{\tabellenverzeichnis}
-    \listoftables
-    \newpage
+\renewcommand{\listtablename}{\tabellenverzeichnis}
+\listoftables
+\newpage
 %-----------------------------------
 % Abkürzungsverzeichnis
 %-----------------------------------
 % Falls das Abkürzungsverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
 % dann folgende Zeile auskommentieren.
-    \phantomsection
-    \addcontentsline{toc}{section}{\abbreHeadingName}
-    \input{src/abkuerzungen/acronyms}
-    \newpage
+%    \phantomsection
+%    \addcontentsline{toc}{section}{\abbreHeadingName}
+%    \input{src/abkuerzungen/acronyms}
+\printglossary[type=acronym]
+\newpage
+
 
 %-----------------------------------
 % Sperrvermerk
@@ -461,21 +487,21 @@
 % Glossar
 %-----------------------------------
 
-    \printglossaries
-    \newpage
+\printglossaries
+\newpage
 
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
 %-----------------------------------
-    \pagenumbering{arabic}
-    \setcounter{page}{1}
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 %-----------------------------------
 % Kapitel / Inhalte
 %-----------------------------------
 %TC:endignore
 % Die Kapitel werden über folgende Datei eingebunden
-    \input{src/skripte/kapitelUebersicht}
+\input{src/skripte/kapitelUebersicht}
 
 %TC:ignore
 
@@ -501,11 +527,11 @@
 %-----------------------------------
 % Literaturverzeichnis
 %-----------------------------------
-    \newpage
+\newpage
 
-    \printbibliography[nottype=online,heading=bibintoc,title={Literaturverzeichnis}]
-    \newpage
-    \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
+\printbibliography[nottype=online,heading=bibintoc,title={Literaturverzeichnis}]
+\newpage
+\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
 % neue Seite für Internetquellen-Verzeichnis
 %\newpage
@@ -519,6 +545,6 @@
 %    \addcontentsline{toc}{section}{Stichwortverzeichnis}
 %    \printindex
 
-    \input{src/kapitel/anhang/erklaerung}
+\input{src/kapitel/anhang/erklaerung}
 %TC:endignore
 \end{document}
