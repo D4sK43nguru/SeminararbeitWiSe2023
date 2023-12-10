@@ -4,11 +4,23 @@
 \section{Auswirkungen und Resultate von Zero-Trust}\label{sec:auswirkungen-und-resultate-von-zero-trust}
 
 \subsection{Verbesserung der Sicherheitsebene}\label{subsec:verbesserung-der-sicherheitsebene}
+Eine \ac{zta} trägt zur Verbesserung der Sicherheitsebene von Systemen bei, indem es einen Paradigmenwechsel in der Cybersicherheit darstellt.
+Das Vertrauen in Personen, Geräte und Prozesse wird zuvor bereits dargestellt auf ein Minimum reduziert, wodurch die Sicherheit erhöht wird.
+
+Die kontinuierliche Überwachung des Datenverkehrs ermöglicht es, sowohl verdächtige Verhaltensweisen und Angriffe schneller zu erkennen und zu unterbinden, als auch aus vergangenen Vorfällen Fehler zu erkennen und die bestehenden Sicherheitsmaßnahmen entsprechend anzupassen.\autocite[\vglf][\pagef 4]{buck-2021}
+Durch Mikrosegmentierung, dem Aufteilen eines Netzwerkes in kleinere Segmente, und dem Gewähren von Zugriff ausschließlich auf die für die Anfrage benötigten Ressourcen wird sichergestellt, dass kein überflüssiger und ungewollter Datenverkehr durchgeführt wird.\autocite[\vglf][\pagef 30]{shore-2021}
+Hierdurch wird die Anzahl der möglichen ausnutzbaren Lücken im System reduziert.
+
 
 \subsection{Reduzierung von Angriffsflächen}\label{subsec:reduzierung-von-angriffsflachen}
+Durch die Mikrosegmentierung eines Netzwerks mit einer \ac{zta} in kleinere, isolierte Segmente werden Angriffe auf das Segment begrenzt, in dem sie stattfinden, ohne sich auf andere Segmente ausbreiten zu können.
+Dies reduziert das Risiko von Datenlecks und unbefugtem Zugriff.\autocites[\vglf][\pagef 20]{shore-2021}[\vglf][\pagef 4]{buck-2021}
+Besonders gegen \ac{ddos}-Angrife bietet eine \ac{zta} starken Schutz, da die meist automatisierten Angriffe durch die Mikrosegmentierung nur geringe Bereiche des Systems anwählen können.\autocite[\vglf][\pagef 289]{Eidle-2017}
+
+Des Weiteren trägt die Verwendung von \ac{sdp} dazu bei, dass eine \enquote{Black Box} gebildet wird, welche die Infrastruktur und Ressourcen vor öffentlichem Zugriff verbirgt\autocites[\vglf][\pagef 4]{buck-2021}[\vglf][\pagef 1]{kumar-2019}
 
 \subsection{Schutz sensibler Daten}\label{subsec:schutz-sensibler-daten}
-
-\subsection{Messbare Auswirkungen auf die Sicherheit}\label{subsec:messbare-auswirkungen-auf-die-sicherheit}
+Um eine \ac{zta} einzurichten werden im Allgemeinen fünf Schritte vorausgesetzt.
+Diese sind (\lowerromannumeral{1}) das Identifizieren der sensiblen Daten, (\lowerromannumeral{2}) das Erfassen des Datenflusses der sensiblen Daten, (\lowerromannumeral{3}) der Entwurf der \ac{zt}-Parametern, (\lowerromannumeral{4}) das kontinuierliche Überwachen des Systems mit Sicherheitsanalysen und (\lowerromannumeral{5}) das Einführen der Steuerung und Automatisierung der Sicherheitsmaßnahmen.\autocites[\vglf][\pagef 2-3]{ahmed-2020}[\vglf][]{balaouras-2023}
 
 \subsection{Probleme}\label{subsec:probleme}
