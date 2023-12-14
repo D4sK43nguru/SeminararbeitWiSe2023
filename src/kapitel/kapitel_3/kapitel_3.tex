@@ -16,8 +16,8 @@ Drei der Grundmethoden einer \ac{zta} sind \glsdisp{authentizitaet}{Anwendungsau
 \subsubsection{Aufbau einer Zero-Trust Architektur}
 
 Eine \ac{zta} lässt jede Anfrage eine Vertrauensevaluation durchgehen.
-Eine solche Evaluation kann aus den folgenden, von Horne und Nair\autocite[\vglf][\pagef 3]{horne-2021} dargestellten, Schritten bestehen:
-\begin{itemize}
+Eine solche Evaluation kann aus den folgenden, von Horne und Nair dargestellten, Schritten bestehen\autocite[\vglf][\pagef 3]{horne-2021}:
+\begin{enumerate}
     \item Vertrauensfaktoren, darunter unter anderem
     \begin{itemize}
         \item \glsdisp{authentizitaet}{Nutzerauthentifizierung},
@@ -37,8 +37,8 @@ Eine solche Evaluation kann aus den folgenden, von Horne und Nair\autocite[\vglf
         \item Datenschutzrichtlinien
     \end{itemize}
     \item Erlauben oder Ablehnen der Zugriffsanfrage.
-\end{itemize}
-Horne und Nair stellen weiter dar, wie die einzelnen Schritte einer Überprüfung ablaufen.\autocite[\vglf][\pagef 3]{horne-2021}
+\end{enumerate}
+Die Überprüfung nach dem $4.$ Schritt der vorherigen Auflistung läuft dabei wie folgt ab:\autocite[\vglf][\pagef 3]{horne-2021}
 \begin{enumerate}
     \item Dabei wird die Anfrage zunächst auf die einzelnen Faktoren überprüft und evaluiert.
     \item Anschließend wird aus dem Resultat dieser Evaluation ein Vertrauenswert berechnet, mit welchem die Anfrage überprüft und einzelne Richtlinien zugeschrieben werden.
@@ -47,7 +47,7 @@ Horne und Nair stellen weiter dar, wie die einzelnen Schritte einer Überprüfun
 
 \subsection{Implementierung von Zero-Trust in Unternehmen}\label{subsec:implementierung-von-zero-trust-in-unternehmen}
 Eine \ac{zta} kann sowohl in einem neuen System implementiert werden, als auch in einem bereits bestehenden eingearbeitet werden.
-Hierfür nennen D'Silvia und Ambawade\autocite[\vglf][\pagef 3]{dsilvia-2021} folgende Annahmen:
+Hierfür werden die folgenden Annahmen genommen:\autocite[\vglf][\pagef 3]{dsilvia-2021}
 \begin{itemize}
     \item Das LAN innerhalb eines Netzwerkes sollte nicht implizit als vertraute Zone behandelt werden.
     \item Mit dem aktuellen Trend, dass in Unternehmen \ac{byod} eingeführt wird, wird davon ausgegangen, dass Geräte, die mit dem Netzwerk verbunden sind, keine Instanz des Unternehmens sind, da jedes Gerät manipuliert werden kann.
