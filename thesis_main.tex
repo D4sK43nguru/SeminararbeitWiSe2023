@@ -167,7 +167,7 @@
     useprefix=true, % 'von' im Namen beachten (beim Anzeigen)
     mincrossrefs = 1,
     language = german,
-backref=true
+    backref=true
 ]{biblatex}%iso dateformat für YYYY-MM-DD
 
 %%%% weitere Anpassungen für BibLaTex
@@ -386,6 +386,9 @@ backref=true
 %-----------------------------------
 \usepackage{amsthm}
 \usepackage{thmtools}
+\usepackage{lipsum}
+\usepackage{lipsum}
+\usepackage{lipsum}
 \declaretheorem[name = Definition, numberwithin=subsection]{definition}
 
 %-----------------------------------
@@ -429,11 +432,14 @@ backref=true
     \addtocontents{toc}{\protect\enlargethispage{-20mm}} % Die Zeile sorgt dafür, dass das Inhaltsverzeichnisseite auf die zweite Seite gestreckt wird und somit schick aussieht. Das sollte eigentlich automatisch funktionieren. Wer rausfindet wie, kann das gern ändern.
     \setcounter{tocdepth}{4}
     \tableofcontents
-    \newpage
+    \clearpage
+%    \newpage
 
 %-----------------------------------
 % Abbildungsverzeichnis
 %-----------------------------------
+%    \clearpage
+    \setcounter{page}{4}
     \renewcommand{\listfigurename}{\abbildungsverzeichnis}
     \listoffigures
     \newpage
