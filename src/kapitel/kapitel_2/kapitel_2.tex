@@ -2,20 +2,20 @@
 
 
 \section{Moderne Cyberbedrohungen}\label{sec:moderne-cyberbedrohungen}
-Die zunehmende Digitalisierung und Vernetzung von Systemen hat eine Vielzahl von Vorteilen mit sich gebracht, jedoch auch die Entstehung und Verbreitung moderner Cyberbedrohungen begünstigt.
+Die zunehmende Digitalisierung und Vernetzung von Systemen hat eine Vielzahl von Vorteilen mit sich gebracht, aber auch die Entstehung und Verbreitung moderner Cyberbedrohungen begünstigt.
 In diesem Abschnitt werden moderne Cyberbedrohungen im Kontext von \ac{zta} untersucht.
 
 Es werden die verschiedenen Arten von Bedrohungen, wie beispielsweise Ransomware, Phishing und \ac{ddos}-Angriffe, sowie deren potenzielle Auswirkungen auf Unternehmen und Organisationen beleuchtet.
-Der Fokus liegt darauf, ein umfassendes Verständnis für die Bedrohungslandschaft zu entwickeln, um die Notwendigkeit und Relevanz von \ac{zta} als Antwort afu diese zunehmend raffinierten und vielschichtigen Angriffe zu unterstreichen.
-Durch die Analyse moderner Cyberbedrohungen im Zusammenhang mit \ac{zta} wird deutlich, wie diese Architekturen dazu beitragen können, die Sicherheitslücken zu schließen und Unternehmen besser zu schützen.
+Der Fokus liegt darauf, ein umfassendes Verständnis für die Bedrohungslandschaft zu entwickeln, um die Notwendigkeit und Relevanz von \ac{zta} als Antwort auf diese zunehmend raffinierten und vielschichtigen Angriffe zu unterstreichen.
 
 \subsection{Trends in der Cyberkriminalität}\label{subsec:trends-und-entwicklungen-in-der-cyberkriminalitat}
 In den letzten Jahren hat die Anzahl der Cyberkriminalitätsfälle in Deutschland stark zugenommen.
-So wurden zwar für das Jahr $2022$ ein Rückgang von 6.5\% gegenüber dem Vorjahr an erfassten Fällen aufgezeichnet, jedoch bildet sich in dem Zeitraum von $2012$ bis $2022$ ein Gesamtwachstum von 112\% an erfassten Cyberkriminalitätsfällen\autocite[\vglf][]{bka-cyberkriminalitaet}.
+So wurden zwar für das Jahr $2022$ ein Rückgang von 6.5\% gegenüber dem Vorjahr an erfassten Fällen aufgezeichnet, jedoch bildet sich in dem Zeitraum von $2012$ bis $2022$ ein Gesamtwachstum von 112\% an erfassten Cyberkriminalitätsfällen\autocite[\vglf][\pagef 5]{bka-cyberkriminalitaet}.
 
-Analog zu der Anzahl der aufgezeichneten Fälle steigen auch die Kosten, die Cyberkriminalität verursacht, sowie die Ausgaben die für IT-Sicherheit in Deutschland vorgenommen werden stetig.
-$2018$ haben Cyberkriminalitätsvorfälle deutschen Unternehmen durchschnittlich $13,12$ Millionen US-Dollar\footnote{Heutiger Wert ungefähr $10,23$ Millionen Euro} gekostet, was gegenüber dem Vorjahr ein Zuwachs von fast 18\% darstellt\autocite[\vglf][]{accenture-cyberkrime-kosten}.
-$2021$ wurden so ungefähr $6,9$ Milliarden Euro für IT-Sicherheitsmaßnahmen ausgegeben, was einem Zuwachs von fast 22\% gegenüber dem Vorjahr entspricht\autocite[\vglf][]{bitkom-itsicherheit}, davon wurden geschätzt $1,7$ Milliarden Euro für Softwarelösungen ausgegeben\autocite[\vglf][]{bitkom-itsicherheit-segment}.
+Analog zu der Anzahl der aufgezeichneten Fälle steigen auch die Kosten, welche durch Cyberkriminalität verursacht werden, sowie die Ausgaben, welche für IT-Sicherheit in Deutschland vorgenommen werden, stetig.
+$2018$ haben Cyberkriminalitätsvorfälle deutsche Unternehmen durchschnittlich $13,12$ Millionen US-Dollar\footnote{Heutiger Wert ungefähr $11.88$ Millionen Euro – Stand 29/12/23 16:10 PST, Bloomberg} gekostet, was gegenüber dem Vorjahr eine Steigerung von fast $18\%$ darstellt\autocite[\vglf][]{accenture-cyberkrime-kosten}.
+$2021$ wurden so ungefähr $6,9$ Milliarden Euro für IT-Sicherheitsmaßnahmen ausgegeben, was einer Steigerung von fast $22\%$ gegenüber dem Vorjahr entspricht\autocite[\vglf][]{bitkom-itsicherheit}.
+Hiervon wurden geschätzt $1,7$ Milliarden Euro für Softwarelösungen ausgegeben\autocite[\vglf][]{bitkom-itsicherheit-segment}.
 
 Wie die Kosten und Ausgaben für Cyberkriminalität steigen auch die möglichen Methoden der Angreifer.
 \autoref{fig:cybercrime-chart-absolute} zeigt nach den Statista Market Insights\autocite[\vglf][]{statista-cybersecurity-cybercrime}, dass die Anzahl der Fälle von Cyberkriminalität fast stetig zunimmt.
@@ -29,7 +29,7 @@ Wie die Kosten und Ausgaben für Cyberkriminalität steigen auch die möglichen 
 \end{figure}
 
 Einzig im Jahr $2022$ wurde ein Rückgang der erfassten Fälle aufgezeichnet.
-Besonders der Anteil, der Phishingangriffe hat im Vergleich zu $2018$ stark zugenommen, wohingegen die Nichtzahlung von Leistungen stark abgenommen hat, wie in \autoref{fig:cybercrime-chart-relative} aus den Statista Market Insights\autocite[\vglf][]{statista-cybersecurity-cybercrime} dargestellt wird.
+Besonders der Anteil der Phishingangriffe hat im Vergleich zu $2018$ stark zugenommen, wohingegen die Nichtzahlung von Leistungen stark abgenommen hat, wie in \autoref{fig:cybercrime-chart-relative} aus den Statista Market Insights\autocite[\vglf][]{statista-cybersecurity-cybercrime} dargestellt wird.
 
 \begin{figure}[htpb]
     \centering
@@ -45,20 +45,28 @@ Die drei häufigsten Methoden von Cyberattacken sind Malware, Phishing und \ac{d
 
 \begin{definition}
     \label{def:phishing}
-    Phishing bezeichnet den Versuch, an vertrauliche Informationen wie Anmeldedaten oder Kreditkarteninformationen zu gelangen, indem ein System innerhalb eines Kommunikationsvorgangs als vertrauenswürdig ausgibt.\autocite[\vglf][\pagef 27]{study-on-phishing-attacks:2018}
+    Phishing bezeichnet den Versuch, an vertrauliche Informationen eines Nutzers wie Anmeldedaten oder Kreditkarteninformationen zu gelangen, indem ein System sich innerhalb eines Kommunikationsvorgangs als vertrauenswürdig ausgibt.\autocite[\vglf][\pagef 27]{study-on-phishing-attacks:2018}
 \end{definition}
 
 \begin{definition}
     \label{def:malware}
-    Malware bezeichnet eine Software, welche ausschließlich Systeme angreift, welche entweder keine anderen Systeme beschädigen, oder welche Malwaresysteme angreifen.\autocite[\vglf][\pagef 108f.]{definition-malware-2010}
+    Malware bezeichnet eine Software, welche ausschließlich Systeme angreift die entweder keine anderen Systeme beschädigen oder Malwaresysteme angreifen.\autocite[\vglf][\pagef 108f.]{definition-malware-2010}
 \end{definition}
 
 \begin{definition}
     \label{def:ddos}
-    Unter \ac{ddos}-Angriffen werden Vorgänge verstanden, gezielt versuchen, ein Netzwerk oder einen Computer die Möglichkeit zu nehmen, gewohnte Dienste auszuführen.
+    Unter \ac{ddos}-Angriffen werden Vorgänge verstanden, die gezielt versuchen, einem Netzwerk oder einem Computer die Möglichkeit zu nehmen, gewohnte Dienste auszuführen.
     Bei solchen Angriffen werden die vorhandenen Daten und Systeme weder direkt noch permanent angegriffen, es wird lediglich die Verfügbarkeit dieser Ressourcen unterbunden.\autocite[\vglf][\pagef 190]{ddos-definition-2003}
 \end{definition}
 
-Diese Angriffe zielen auf verschiedene Angriffsflächen und haben verschiedene Ziele, welche das korruptieren von Daten oder Systeme oder das Hindern des Zugriffs auf Daten und Systeme beinhalten können.
-Um diese Angriffe abzuwehren, gibt es verschiedene Methoden, eine davon ist eine \ac{zta}.
+\begin{definition}
+    \label{def:ransomware}
+    Als Ransomware wird schädliche Software bezeichnet, die darauf abzielt, digitale Daten zu verschlüsseln und den Zugriff auf diese zu verhindern.
+    Die Angreifer fordern oftmals ein Lösegeld für die Wiederherstellung des Zugriffs.
+    Präventive Maßnahmen gegen Ransomware umfassen häufig komplexe Sicherheitsprotokolle und regelmäßige Datensicherungen.
+\end{definition}
+
+Jeder diese Angriffe zielt mit voneinander unterschiedlichen Absichten, welche das Korruptieren von Daten oder Systeme oder das Hindern des Zugriffs auf Daten und Systeme beinhalten können, auf eigene Bereiche in einem System..
+Um diese Angriffe abzuwehren, gibt es verschiedene Methoden.
+Eine davon ist das Implementieren einer \ac{zta}.
 
