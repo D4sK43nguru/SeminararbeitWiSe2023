@@ -5,11 +5,14 @@
 
 ### Removed
 
-- 🔥 Remove obsolete todo markings [[77d1546](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/77d1546710002cd0a97dbed77701ba8967fa0c7f)]
+- 🔥 Remove list of tables [[65b4428](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/65b4428d82b72c879a68ef15442d07ed6993918f)]
 
 ### Miscellaneous
 
+-  Merge branch &#x27;main&#x27; of https://github.com/D4sK43nguru/SeminararbeitWiSe2023 [[0d2e0a0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0d2e0a0233180f87e1612d03e50d6aa6db513268)]
+-  Merge branch &#x27;release/1.1&#x27; [[b19c68e](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b19c68ef00e263edf647affda57a1ab309cbc54e)]
 -  Merge branch &#x27;release/1.0&#x27; into main [[7ffcc45](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/7ffcc4522dff2d7a77209498d1ad768ecca61bfb)]
+- 📝 Update CHANGELOG [[77806a3](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/77806a3d5b552ca919c801101fbdf35857ccfe3f)]
 -  Merge remote-tracking branch &#x27;origin/main&#x27; into main [[7fac078](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/7fac078f4ff893a065c849d7e2b86e7d4bd548f0)]
 -  Merge branch &#x27;develop&#x27; [[47d081a](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/47d081afffb7b07629612e22a5206a9a603ca4cf)]
 -  0.0.3 [[f35c0d9](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/f35c0d91ed1968375c5659df5cf4a1eab3ac51d0)]
@@ -17,6 +20,30 @@
 - 📝 Update CHANGELOG [[c3c2aea](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/c3c2aeabc234f97cb6dcb6d9947ea751a841baef)]
 - 📝 Update CHANGELOG [[cdf9606](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/cdf960674ee1395fc989abcb87e27fb0bdbe6c62)]
 -  0.0.2 [[59a5b73](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/59a5b7364e7df4b56fe038f96adbfe3ae7b16b86)]
+
+
+<a name="1.1.0"></a>
+## 1.1.0 (2023-12-29)
+
+### Added
+
+- ✨ Add backreferences to bibliography [[a217a82](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/a217a82e7eec991c1a15c139242ff4f00faa22af)]
+
+### Removed
+
+- 🔥 Remove commented todo [[91fa8a6](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/91fa8a69cdae062443f8790a62a06a667b8d4904)]
+- 🔥 Remove obsolete todo markings [[77d1546](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/77d1546710002cd0a97dbed77701ba8967fa0c7f)]
+
+### Fixed
+
+- ✏️ Rewrite chapter 5.3 [[2062354](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/2062354ff7ebfca632181e98c6e8b04cca727223)]
+- ✏️ Add introductory texts to sections [[82f9f45](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/82f9f45506be6c1ea9e249ce62123e31b0002d48)]
+
+### Miscellaneous
+
+-  Merge branch &#x27;feature/rewrite_chapter_5.3&#x27; into develop [[721878c](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/721878c88ae67dd2ced83435a0979853401a44b2)]
+-  Merge branch &#x27;feature/write-introductory-texts&#x27; into develop [[3b03565](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/3b035653f390c830d2af55afada81eb2b4262410)]
+-  Merge branch &#x27;release/1.0&#x27; into develop [[9f2ca80](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/9f2ca80848fb14fb276c62ffdaf6b4ac4e16a220)]
 
 
 <a name="1.0.0"></a>
