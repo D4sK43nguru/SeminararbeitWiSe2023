@@ -2,7 +2,7 @@
   "dependencies": {},
   "name": "seminararbeit-sose-2023",
   "description": "[![Build](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml/badge.svg)](https://github.com/andygrunwald/FOM-LaTeX-Template/actions/workflows/Check.yml)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "thesis_main.tex",
   "scripts": {
     "test": "sh compile.sh",
