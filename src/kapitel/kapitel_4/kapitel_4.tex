@@ -1,4 +1,10 @@
+\newpage
 \section{Auswirkungen und Resultate von Zero-Trust}\label{sec:auswirkungen-und-resultate-von-zero-trust}
+Die Implementierung einer \ac{zta} kann tiefgreifende Auswirkungen auf die Sicherheit, Produktivität und Benutzerfreundlichkeit in Unternehmen haben.
+In diesem Abschnitt werden die potenziellen Auswirkungen und Resultate von \acp{zta} eingehend untersucht.
+Dabei werden die erwarteten positiven Effekte wie die Verringerung von Cyberangriffen und Datenverlusten durch striktere Überprüfung von Netzwerkzugriffen, sowie mögliche Einflüsse auf die Benutzerfreundlichkeit und Produktivität der Mitarbeiter beleuchtet.
+
+Durch die Analyse der \nameref{sec:auswirkungen-und-resultate-von-zero-trust}  wird verdeutlicht, wie diese Architekturen dazu beitragen können, die Sicherheitslandschaft zu transformieren und Unternehmen zu schützen, ohne die Arbeitsabläufe zu beeinträchtigen.
 
 \subsection{Verbesserung der Sicherheitsebene}\label{subsec:verbesserung-der-sicherheitsebene}
 Eine \ac{zta} trägt zur Verbesserung der Sicherheitsebene von Systemen bei, indem es einen Paradigmenwechsel in der Cybersicherheit darstellt.
@@ -28,11 +34,15 @@ Mit bisher genutzten Lösungen beträgt die Zeit, die es benötigt wird, über e
 Die Segmentierung eines Netzwerkes trägt außerdem dazu, der Schnelllebigkeit der Technologien und Netzwerke, sowie den Problemen beim Bearbeiten und Schützen der Schwachstellen entgegenzuwirken.
 So wurden zum Beispiel im Jahr $2018$ allein wurden ungefähr $16.500$ Einträge der \ac{nvd} der USA hinzugefügt, im Jahr $2022$ bereits ungefähr $25.200$ \autocites[\vglf][\pagef 6]{cunningham-2019}[\vglf][]{cve-2023}.
 
-\subsection{Schutz sensibler Daten}\label{subsec:schutz-sensibler-daten}
-\todo[inline]{Eventuell subsection \enquote{Datenverarbeitung} nennen und zwei subsubsections zu \enquote{Datenschutz} und \enquote{Datenspeicherung} schreiben?}
-Um eine \ac{zta} einzurichten werden im Allgemeinen fünf Schritte vorausgesetzt.
+\subsection{Datenverarbeitung}\label{subsec:datenverarbeitung}
+\subsubsection{Datenschutz}\label{subsubsec:datenschutz}
+Um den Datenschutz in einem System während der implementierung einer \ac{zta} zu gewährleisten werden im Allgemeinen fünf Schritte vorausgesetzt.
 Diese sind (\lowerromannumeral{1}) das Identifizieren der sensiblen Daten, (\lowerromannumeral{2}) das Erfassen des Datenflusses der sensiblen Daten, (\lowerromannumeral{3}) der Entwurf der \ac{zt}-Parametern, (\lowerromannumeral{4}) das kontinuierliche Überwachen des Systems mit Sicherheitsanalysen und (\lowerromannumeral{5}) das Einführen der Steuerung und Automatisierung der Sicherheitsmaßnahmen.\autocites[\vglf][\pagef 2-3]{ahmed-2020}[\vglf][]{balaouras-2023}
 
+Mit diesen wird sichergestellt, dass nur direkt zusammenhängende Daten mit denselben Berechtigungen aufrufbar sind, sowie der kontinuierliche Zugriff auf die Daten während der Umstellung bereitgestellt.
+
+
+\subsubsection{Datenspeicherung}\label{subsubsec:datenspeicherung}
 Zusätzlich werden in einer \ac{zta} viele Daten, darunter auch Nutzerdaten gespeichert, damit sichergestellt werden kann, welcher Akteur auf welche Daten, Systeme und Dienste zugreifen kann, \bzw darf.
 Für diese Daten wird für jeden Akteur ein Register eingerichtet, welches die folgenden Daten beinhalten kann\autocite[\vglf][\pagef 161]{colombo-2021}:
 \begin{itemize}
@@ -53,7 +63,7 @@ Für diese Daten wird für jeden Akteur ein Register eingerichtet, welches die f
     \label{fig:zero-trust-challenges}
 \end{figure}
 
-Zusätzlich zu diesen Problemen gibt es beim Aufbau einer \ac{zta} auch die Bedenken um die Sicherheit gespeicherter Daten, welche wie in \autoref{subsec:schutz-sensibler-daten} aufgeführt wurden zur effektiven Zugriffsüberprüfung erforderlich sind.
+Zusätzlich zu diesen Problemen gibt es beim Aufbau einer \ac{zta} auch die Bedenken um die Sicherheit gespeicherter Daten, welche wie in \autoref{subsubsec:datenspeicherung} aufgeführt wurden, zur effektiven Zugriffsüberprüfung erforderlich sind.
 Jedoch ist es möglich, auch diese Daten innerhalb der \ac{zta} zu speichern, sodass auch sie von dem Schutz des Netzwerkes profitieren.
 Hierbei muss allerdings beachtet werden, dass die Systeme und Akteure, die Einfluss auf die Zugriffsentscheidung über Anfragen von Systemen und Nutzern haben, auch auf die gespeicherten Daten Zugriff besitzen müssen, andernfalls bringt die Speicherung der Daten keinen nutzen.
 
