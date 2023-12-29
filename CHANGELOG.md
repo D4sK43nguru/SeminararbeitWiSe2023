@@ -3,14 +3,12 @@
 <a name="next"></a>
 ## next
 
-### Removed
-
-- 🔥 Remove list of tables [[65b4428](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/65b4428d82b72c879a68ef15442d07ed6993918f)]
-
 ### Miscellaneous
 
+-  Merge branch &#x27;release/1.1.1&#x27; [[0ad5cf5](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0ad5cf517cbfe2b9290b064c5753d5e2b4213f65)]
 -  Merge branch &#x27;main&#x27; of https://github.com/D4sK43nguru/SeminararbeitWiSe2023 [[0d2e0a0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0d2e0a0233180f87e1612d03e50d6aa6db513268)]
 -  Merge branch &#x27;release/1.1&#x27; [[b19c68e](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b19c68ef00e263edf647affda57a1ab309cbc54e)]
+- 📝 Update CHANGELOG [[42572b0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/42572b06b9365ba5f6234df3393df76709ef94d0)]
 -  Merge branch &#x27;release/1.0&#x27; into main [[7ffcc45](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/7ffcc4522dff2d7a77209498d1ad768ecca61bfb)]
 - 📝 Update CHANGELOG [[77806a3](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/77806a3d5b552ca919c801101fbdf35857ccfe3f)]
 -  Merge remote-tracking branch &#x27;origin/main&#x27; into main [[7fac078](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/7fac078f4ff893a065c849d7e2b86e7d4bd548f0)]
@@ -20,6 +18,34 @@
 - 📝 Update CHANGELOG [[c3c2aea](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/c3c2aeabc234f97cb6dcb6d9947ea751a841baef)]
 - 📝 Update CHANGELOG [[cdf9606](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/cdf960674ee1395fc989abcb87e27fb0bdbe6c62)]
 -  0.0.2 [[59a5b73](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/59a5b7364e7df4b56fe038f96adbfe3ae7b16b86)]
+
+
+<a name="1.1.1"></a>
+## 1.1.1 (2023-12-29)
+
+### Added
+
+- ✨ Correction by Max [[5c833f0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/5c833f0f5b8b3dd7bb2b1e84dd63301705ffa3f4)]
+- ✨ Correction by Mia [[de5b597](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/de5b5976ef981404c2f2286ff63bd2c0e03ab6d2)]
+
+### Removed
+
+- 🔥 Remove list of tables [[65b4428](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/65b4428d82b72c879a68ef15442d07ed6993918f)]
+
+### Fixed
+
+- 🐛 Fix error in toc [[c1aeb0d](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/c1aeb0d209159ac66317ccfbd69656bf868e5fd0)]
+- ✏️ Correction by muesli [[e2ff8d6](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/e2ff8d6fd7e9c353c0575331fe1783be4de72a0e)]
+
+### Miscellaneous
+
+-  Merge branch &#x27;feature/fix_page_numbering_in_toc&#x27; into develop [[fdf9918](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/fdf9918a0f2f9d6658608f1728d9cdac58086d4e)]
+-  Merge branch &#x27;feature/korrektur_wurzeli&#x27; into develop [[b270afc](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b270afca1426bde666a29bf8d189a25e79b0c190)]
+-  Merge branch &#x27;feature/korrektur_mia&#x27; into develop [[d03f475](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/d03f4757232431e1f00edb477d460243360550c0)]
+-  Merge branch &#x27;feature/korrektur_muesli&#x27; into develop [[7070112](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/70701121f568942b8c618fc6bd758fcf5a1dd342)]
+-  Merge branch &#x27;feature/add_ransomware&#x27; into develop [[a602ab0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/a602ab056278cdce3be3138c22d083275dd33dd8)]
+-  Add definition for ransomware [[26255b9](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/26255b958896df9b3b8e168eed4d59bc71f210b6)]
+-  Merge branch &#x27;release/1.1&#x27; into develop [[18c9496](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/18c9496e7aeb42ef67989438c12409d3a21c912a)]
 
 
 <a name="1.1.0"></a>
