@@ -1,4 +1,52 @@
 \newpage
 
 
-\section{Section1}
+\section{Grundlagen}\label{sec:grundlagen}
+\subsection[Definition einer Zero-Trust-Architektur]{Definition einer \ac{zta}}\label{subsec:definition-einer-zta}
+\ac{zt} bezeichnet eine Sammlung an Maßnahmen der Cybersicherheit, welche darauf basieren, die Verteidigungen von netzwerkbasierten Umfängen auf Nutzer und Ressourcen umzuleiten\autocite[\vglf][\pagef 4]{NIST:800207}.
+Darüber hinaus ist eine \ac{zta} ein Cybersicherheitsplan einer Einrichtung, der die Konzepte von \ac{zt} umsetzt und Zugriffsrichtlinien, Arbeitsabläufe und Beziehungen zwischen Komponenten umfasst.\autocite[\vglf][\pagef 4]{NIST:800207}
+
+Das Ziel einer \ac{zta} ist es, \glsdisp{autorisierung}{unautorisierten} Zugriff auf Daten und Leistungen zu verhindern und hierbei das Durchführen der Zugriffskontrollen so detailliert wie möglich zu gestalten.
+
+
+\subsection{Entwicklung und historischer Hintergrund}\label{subsec:entwicklung-und-historischer-hintergrund}
+Zscaler hat im Jahr 2022 die Entwicklung des \ac{zt}-Konzepts knapp zusammengefasst.\autocites[\vglf][]{zscaler-2022b}
+Die ersten Grundsteine, die zur Entwicklung des \ac{zt}-Konzepts führten, wurden $1987$ gelegt.
+In diesem Jahr wurde von Entwicklern der \ac{dec} eine Studie zum Thema Firewall-Technologie veröffentlicht, wodurch die \enquote{Festung mit Burggraben} als Standardmodell der Netzwerksicherheit etabliert wurde.\autocites[\vglf][]{zscaler-2022b}
+
+Im Jahr $1994$ wurde der Begriff \enquote{\ac{zt}} im Rahmen einer Doktorarbeit über Computersicherheit geprägt.
+Der Autor untersuchte Vertrauen als ein mathematisch beschreibbares, endliches Gut.\autocite[\vglf][]{marsh-1994}
+Im selben Jahr wurden Firewalls als eine harte Schale um einen weichen Kern, wie bei einem Ei, beschrieben.
+Wenn ein Angreifer die Firewall überwinden kann, stünde ihm das ganze Netzwerk zur Verfügung. \autocite[\vglf][\pagef 29]{world-1994}
+
+Die erste Version des 802.1X-Protokolls\autocite[\vglf][]{IEEE-2001} wurde im Jahr $2001$ veröffentlicht und als Standard für Netzzugangskontrollen eingeführt.
+In diesem Protokoll wird die Authentifizierung von Netzverbindungen sowie die Vergabe von Zugriffsrechten auf Netzwerkebene vorgesehen.
+Dadurch, dass das Protokoll komplexe Vorgänge vorschreibt, war es nicht zur allgemeinen Implementierung geeignet.\autocite[\vglf][]{zscaler-2022b}
+Zusätzlich wurde auch in $2001$ die erste Version des \ac{osstmm} mit dem Fokus auf Vertrauen veröffentlicht.\autocite[\vglf][]{osstmm-2001}
+
+Um das Jahr $2007$ wurde die dritte Version des \ac{osstmm} veröffentlicht, welche in einem ganzen Kapitel über die Schwachsetlle \enquote{Vertrauen} in Systemen befasst.\autocite[\vglf][]{osstmm-2010}
+
+Eine weitere Prägung des Begriffes \enquote{\ac{zt}} fand im Jahr $2010$ statt, als der Analyst Kindervag in einem Forschungsbeitrag die Verlagerung der Authentifizierung und Cybersicherheit in den Datenpfad vorsieht und auch die Segmentierung zwischen einzelnen Sitzungen fordert.
+Weiterhin wird das Paradigma des Netzwerkzugangs verhaftet, der Sicherheitsperimeter wird allerdings ins Netzwerk verschoben.\autocites[\vglf][]{zscaler-2022b}[\vglf][]{kindervag-2010}
+
+$2018$ arbeiteten Forscher von \ac{nist} und \ac{nccoe} zusammen an einem Projekt, welches zur Veröffentlichung der \ac{nist} Leitlinie SP 800--207\autocite{NIST:800207} im Jahr $2020$ als ein erstes einheitliches Framework für \acp{zta} führte.
+Diese definiert \ac{zt} als eine Sammlung verschiedener Konzepte und Ideen, welche die Unsicherheit bei anfragenbezogenen Zugriffsentscheidungen in Informationssystemen verringern sollen.
+Diese Veröffentlichung leitete einen Paradigmenwechsel ein, da erstmals \ac{zt} nicht mehr im Kontext des Netzwerkzugangs definiert wird.\autocite[\vglf][]{zscaler-2022b}
+
+Im Jahr $2021$ hat das \ac{ncsc} im Vereinigten Königreich empfohlen, dass Netzwerkarchitekten einen \ac{zt} Ansatz für neue IT-Lösungen in Anbetracht nehmen, dies besonders dann, wenn signifikante Nutzung von Cloud-Services geplant ist.\autocite{ncsc-2021}
+Zusätzlich wurden im Jahr $2022$ alle US-Behörden zur Umstellung auf \ac{zt} bis $2024$ verpflichtet.\autocite[\vglf][]{zscaler-2022b}
+
+
+\subsection{Prinzipien und Konzepte von Zero-Trust}\label{subsec:prinzipien-und-konzepte-von-zero-trust}
+In einem System, welches \ac{zt} implementiert, muss jede Anfrage bevor sie auf die Ressourcen zugreifen kann, in einem \gls{pdp}/\gls{pep} überprüft werden\autocite[\vglf][\pagef 4]{NIST:800207}.
+
+Eine \ac{zta} wird mit dem Gedanken entwickelt und umgesetzt, die folgenden Grundsätze umzusetzen:
+\begin{itemize}
+    \item Alle Datenquellen und Rechenleistungen werden als Ressourcen angesehen,
+    \item Unabhängig der Netzwerkposition ist jegliche Kommunikation gesichert,
+    \item Der Zugriff auf einzelne Ressourcen erfolgt auf einer Pro-Sitzung Grundlage,
+    \item Zugriff auf Ressourcen wird durch dynamische Regelungen festgelegt und kann von verschiedenen Attributen, wie die Identität des \glspl{client} beeinflusst werden,
+    \item Das Unternehmen überwacht und misst die \gls{integritaet} aller eigenen und verbundenen Ressourcen,
+    \item Jegliche Ressourcen \gls{authentifizierung} und \gls{autorisierung} ist dynamisch und erzwungen, bevor Zugriff gewährt werden kann,
+    \item Das Unternehmen sammelt so viele Informationen über den aktuellen Status der Ressourcen, Netzwerkinfrastruktur und Kommunikationen wie möglich und nutzt diese, um die Sicherheit zu erhöhen.\autocite[\vglf][\pagef 6-7]{NIST:800207}
+\end{itemize}
