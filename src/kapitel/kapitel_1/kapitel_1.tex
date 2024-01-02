@@ -2,7 +2,7 @@
 
 
 \section{Grundlagen}\label{sec:grundlagen}
-\acp{zta} haben in den letzten Jahren an Bedeutung gewonnen, da traditionelle Sicherheitsansätze immer weniger effektiv gegen moderne Cyberbedrohungen werden.
+\acp{zta} haben in den letzten Jahren an Bedeutung gewonnen, da traditionelle Sicherheitsansätze immer ineffektiver gegen moderne Cyberbedrohungen werden.
 In einer zunehmend vernetzten und digitalisierten Welt, in der Unternehmensdaten und -ressourcen ständig Bedrohungen ausgesetzt sind, wird die Implementierung einer \ac{zta} zu essenziellen Sicherheitsstrategie.
 
 Dieser Abschnitt widmet sich der eingehenden Analyse von \ac{zta}, einschließlich ihrer historischen Entwicklung sowie den zugrunde liegenden Prinzipien.
@@ -21,7 +21,6 @@ In diesem Jahr wurde von Entwicklern der \ac{dec} eine Studie zum Thema Firewall
 
 Im Jahr $1994$ wurde der Begriff \enquote{\ac{zt}} im Rahmen einer Doktorarbeit über Computersicherheit geprägt.
 Der Autor untersuchte Vertrauen als ein mathematisch beschreibbares, endliches Gut.\autocite[\vglf][]{marsh-1994}
-Im selben Jahr wurden Firewalls als eine harte Schale um einen weichen Kern, wie bei einem Ei, beschrieben.
 Wenn ein Angreifer die Firewall überwinden kann, stünde ihm das ganze Netzwerk zur Verfügung. \autocite[\vglf][\pagef 29]{world-1994}
 
 Die erste Version des 802.1X-Protokolls\autocite[\vglf][]{IEEE-2001} wurde im Jahr $2001$ veröffentlicht und als Standard für Netzzugangskontrollen eingeführt.
@@ -29,7 +28,7 @@ In diesem Protokoll wird die Authentifizierung von Netzverbindungen sowie die Ve
 Dadurch, dass das Protokoll komplexe Vorgänge vorschreibt, war es nicht zur allgemeinen Implementierung geeignet.\autocite[\vglf][]{zscaler-2022b}
 Zusätzlich wurde auch in $2001$ die erste Version des \ac{osstmm} mit dem Fokus auf Vertrauen veröffentlicht.\autocite[\vglf][]{osstmm-2001}
 
-Um das Jahr $2007$ wurde die dritte Version des \ac{osstmm} veröffentlicht, welche in einem ganzen Kapitel über die Schwachstelle \enquote{Vertrauen} in Systemen befasst.\autocite[\vglf][]{osstmm-2010}
+Im Jahr $2008$ wurde die dritte Version des \ac{osstmm} veröffentlicht, welche in einem ganzen Kapitel über die Schwachstelle \enquote{Vertrauen} in Systemen befasst.\autocite[\vglf][]{osstmm-2010}
 
 Eine weitere Prägung des Begriffes \enquote{\ac{zt}} fand im Jahr $2010$ statt, als der Analyst Kindervag in einem Forschungsbeitrag die Verlagerung der Authentifizierung und Cybersicherheit in den Datenpfad vorsieht und auch die Segmentierung zwischen einzelnen Sitzungen fordert.
 Weiterhin wird das Paradigma des Netzwerkzugangs verhaftet, der Sicherheitsperimeter wird allerdings ins Netzwerk verschoben.\autocites[\vglf][]{zscaler-2022b}[\vglf][]{kindervag-2010}
@@ -50,7 +49,7 @@ Eine \ac{zta} wird mit dem Gedanken entwickelt und umgesetzt, die folgenden Grun
     \item Alle Datenquellen und Rechenleistungen werden als Ressourcen angesehen,
     \item Unabhängig der Netzwerkposition ist jegliche Kommunikation gesichert,
     \item Der Zugriff auf einzelne Ressourcen erfolgt auf einer Pro-Sitzung Grundlage,
-    \item Zugriff auf Ressourcen wird durch dynamische Regelungen festgelegt und kann von verschiedenen Attributen, wie die Identität des \glspl{client} beeinflusst werden,
+    \item Zugriff auf Ressourcen wird durch dynamische Regelungen festgelegt und kann von verschiedenen Attributen, wie die Identität des \glsdisp{csm}{Clients} beeinflusst werden,
     \item Das Unternehmen überwacht und misst die \gls{integritaet} aller eigenen und verbundenen Ressourcen,
     \item Jegliche Ressourcen \gls{authentifizierung} und \gls{autorisierung} ist dynamisch und erzwungen, bevor Zugriff gewährt werden kann,
     \item Das Unternehmen sammelt so viele Informationen über den aktuellen Status der Ressourcen, Netzwerkinfrastruktur und Kommunikationen wie möglich und nutzt diese, um die Sicherheit zu erhöhen.\autocite[\vglf][\pagef 6-7]{NIST:800207}
