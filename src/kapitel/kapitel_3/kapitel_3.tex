@@ -55,7 +55,7 @@ Hierfür werden die folgenden Annahmen genommen:\autocite[\vglf][\pagef 3]{dsilv
     \item Cloud-Dienste sind ein wesentlicher Bestandteil jedes Unternehmensnetzwerkes geworden und verdeutlichen, dass nicht alle Unternehmensressourcen innerhalb der Unternehmensinfrastruktur liegen.
     \item Alle Verbindungsanfragen von außerhalb des Unternehmens, wie \zb Remote Desktop, müssen \glsdisp{autorisierung}{autorisiert} und \glsdisp{authentizitaet}{authentifiziert} werden.
     Alle Daten müssen mit Respekt, \gls{vertraulichkeit}, \gls{integritaet} und \glsdisp{authentizitaet}{Quellenauthentifizierung} übertragen werden.
-    \item Ausgehend der obigen Annahmen ist es essenziell, dass alle Ressourcen und Kommunikation zwischen dem Unternehmen und externer Infrastruktur einer ständigen Sicherheitsstrategie unterliegen muss.
+    \item Ausgehend der obigen Annahmen ist es essenziell, dass alle Ressourcen und Kommunikation zwischen dem Unternehmen und externer Infrastruktur einer ständigen Sicherheitsstrategie unterliegen müssen.
 \end{itemize}
 
 \subsection{Vor- und Nachteile von Zero-Trust}\label{subsec:vor-und-nachteile-von-zero-trust}
@@ -64,7 +64,7 @@ Dieser Abschnitt listet und erläutert einzelne dieser Eigenschaften.
 
 \subsubsection{Vorteile}\label{subsubsec:vorteile}
 Bei erfolgreicher Implementierung einer \ac{zta} hat jeder Teil des Netzwerkes nur für ein Minimum der Zeit Zugriff auf das Minimum der erforderten Ressourcen.
-Dies sorgt dafür, dass ein nahezu umfassender Schutz vor Angriffen besteht, welcher besonders Sicherheitslücken in Systemen, die durch, beabsichtigte oder unbeabsichtigte, Vertrauensbrüche entstehen, angreift\autocite[\vglf][\pagef 146]{Edo-2022}.
+Dies sorgt dafür, dass ein nahezu umfassender Schutz vor Angriffen besteht, welche besonders Sicherheitslücken in Systemen, die durch, beabsichtigte oder unbeabsichtigte, Vertrauensbrüche entstehen, abzielen\autocite[\vglf][\pagef 146]{Edo-2022}.
 Zudem ist eine \ac{zta} flexibler, was die Nutzung von Anwendungen und Geräten betrifft, da die Sicherheitsarchitektur sich nicht auf einzelne Perimeter verlassen muss.\autocites[\vglf][\pagef 28]{shore-2021}[\vglf][]{hunter-2020}
 Gleichermaßen stellt eine \ac{zta} eine bessere Einsicht in den Netzverkehr und das Nutzerverhalten dar, was es erneut vereinfacht, Risiken zu erkennen und auf diese zu reagieren.\autocite[\vglf][\pagef 28]{shore-2021}
 
@@ -79,7 +79,7 @@ Dies führt zu einer effizienteren Nutzung von Ressourcen und ermöglicht es den
 
 \subsubsection{Nachteile}\label{subsubsec:nachteile}
 Während die Vorteile primär auf der technischen Seite einer \ac{zta} liegen, existieren auch Nachteile, welche auf physischer Ebene Auswirkungen zeigen.
-So kann sich das Einrichten einer \ac{zta} durch das Erwerben neuer, notwendiger Werkzeuge und Technologien als teuer darstellen.\autocite[\vglf][\pagef 33]{shore-2021}
-Zudem ist die Nutzererfahrung mit dem System geringer als gewünscht ausfallen, da jede Anfrage eine neue \gls{autorisierung} und \glsdisp{authentizitaet}{Authentifizierung} erfordert, was besonders zu Anfängen eine nicht vernachlässigbare Zeitdauer in Anspruch nehmen kann.\autocite[\vglf][\pagef 28]{shore-2021}
+So kann sich das Einrichten einer \ac{zta} durch das Erwerben neuer, notwendiger Werkzeuge und Technologien als kostenintensiv darstellen.\autocite[\vglf][\pagef 33]{shore-2021}
+Zudem kann die Nutzererfahrung mit dem System geringwertiger als gewünscht ausfallen, da jede Anfrage eine neue \gls{autorisierung} und \glsdisp{authentifizierung}{Authentifizierung} erfordert, was besonders zu Anfängen eine nicht vernachlässigbare Zeitdauer in Anspruch nehmen kann.\autocite[\vglf][\pagef 28]{shore-2021}
 
-Darüber hinaus kann die Implementierung einer \ac{zta} komplex und zeitaufwendig sein, sowie signifikante Änderungen in bestehenden Netzwerkinfrastrukturen und Sicherheitsmaßnahmen erfordern.\autocites[\vglf][\pagef 33]{shore-2021}[\vglf][\pagef 11]{buck-2021}
+Darüber hinaus kann die Implementierung einer \ac{zta} selbst komplex und zeitaufwendig sein, sowie signifikante Änderungen in bestehenden Netzwerkinfrastrukturen und Sicherheitsmaßnahmen erfordern.\autocites[\vglf][\pagef 33]{shore-2021}[\vglf][\pagef 11]{buck-2021}
