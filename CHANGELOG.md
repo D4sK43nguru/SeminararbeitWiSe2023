@@ -5,7 +5,9 @@
 
 ### Miscellaneous
 
+-  Merge branch &#x27;release/1.2.1&#x27; [[d9057df](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/d9057dfaa6669812fce39f5b7c5db2aa2146a9c6)]
 -  Merge branch &#x27;release/1.2.0&#x27; [[b837892](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b8378922cfdebb6004cb60782587e812f658d25d)]
+- 📝 Update CHANGELOG [[b501fc2](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b501fc29d9bb985c68d3cd1643698124d162656b)]
 -  Merge branch &#x27;release/1.1.1&#x27; [[0ad5cf5](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0ad5cf517cbfe2b9290b064c5753d5e2b4213f65)]
 - 📝 Update CHANGELOG [[67e2625](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/67e2625ee605672144afc1b90005b6784c2699d5)]
 -  Merge branch &#x27;main&#x27; of https://github.com/D4sK43nguru/SeminararbeitWiSe2023 [[0d2e0a0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0d2e0a0233180f87e1612d03e50d6aa6db513268)]
@@ -20,6 +22,32 @@
 - 📝 Update CHANGELOG [[c3c2aea](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/c3c2aeabc234f97cb6dcb6d9947ea751a841baef)]
 - 📝 Update CHANGELOG [[cdf9606](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/cdf960674ee1395fc989abcb87e27fb0bdbe6c62)]
 -  0.0.2 [[59a5b73](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/59a5b7364e7df4b56fe038f96adbfe3ae7b16b86)]
+
+
+<a name="1.2.0"></a>
+## 1.2.0 (2024-01-02)
+
+### Added
+
+- ✨ Add correction by Rieke [[980b24a](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/980b24a47b2550d0c5b42d4540ca330f2dbca48d)]
+
+### Removed
+
+- 🔥 Remove entry &#x27;client&#x27; and rewrite &#x27;csm&#x27; [[78903df](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/78903dff739d7e75476bb01ab068e462cb42de7e)]
+- 🔥 Remove glossary entry &quot;authenticity&quot; [[188cfd4](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/188cfd45e4ec35c3fe82002e0c3c28c1e003eace)]
+
+### Fixed
+
+- ✏️ Fix decimal point [[a3a9800](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/a3a980013984cf4dba2d949880eb96ec6affe713)]
+- ✏️ Rewrite glossary entry of &quot;vertraulichkeit&quot; [[b405a32](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b405a32623577ddfa998b6640d2a15981a7b9e2c)]
+- ✏️ Rewrite entry &#x27;integritaet&#x27; [[72f6d80](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/72f6d80371dd81aaae48a3128150d67dbab6ba20)]
+- ✏️ Rewrite entry &quot;authentication&quot; and &quot;autorization&quot; [[f375e41](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/f375e41faed6ce82e58ac24a752c489660f11c72)]
+
+### Miscellaneous
+
+-  Merge branch &#x27;feature/rewrite_glossary&#x27; into develop [[508eec7](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/508eec75323c1dfeda84fb88fc3996c956308a34)]
+-  Merge branch &#x27;feature/correction-by-rieke&#x27; into develop [[02a3215](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/02a3215f68638b2a931ec3189909e7b9c4c20744)]
+-  Merge branch &#x27;release/1.2.0&#x27; into develop [[bb6054d](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/bb6054df6ecb6b68396d2bed475212d10ff1531a)]
 
 
 <a name="1.1.2"></a>
