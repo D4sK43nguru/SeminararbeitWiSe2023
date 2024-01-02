@@ -166,7 +166,8 @@
     doi=false,
     useprefix=true, % 'von' im Namen beachten (beim Anzeigen)
     mincrossrefs = 1,
-    language = german
+    language = german,
+    backref=true
 ]{biblatex}%iso dateformat für YYYY-MM-DD
 
 %%%% weitere Anpassungen für BibLaTex
@@ -385,7 +386,10 @@
 %-----------------------------------
 \usepackage{amsthm}
 \usepackage{thmtools}
-\declaretheorem[name = Definition, numberwithin=section]{definition}
+\usepackage{lipsum}
+\usepackage{lipsum}
+\usepackage{lipsum}
+\declaretheorem[name = Definition, numberwithin=subsection]{definition}
 
 %-----------------------------------
 % Formelverzeichnis
@@ -428,20 +432,23 @@
     \addtocontents{toc}{\protect\enlargethispage{-20mm}} % Die Zeile sorgt dafür, dass das Inhaltsverzeichnisseite auf die zweite Seite gestreckt wird und somit schick aussieht. Das sollte eigentlich automatisch funktionieren. Wer rausfindet wie, kann das gern ändern.
     \setcounter{tocdepth}{4}
     \tableofcontents
-    \newpage
+    \clearpage
+%    \newpage
 
 %-----------------------------------
 % Abbildungsverzeichnis
 %-----------------------------------
+%    \clearpage
+    \setcounter{page}{4}
     \renewcommand{\listfigurename}{\abbildungsverzeichnis}
     \listoffigures
     \newpage
 %-----------------------------------
 % Tabellenverzeichnis
 %-----------------------------------
-    \renewcommand{\listtablename}{\tabellenverzeichnis}
-    \listoftables
-    \newpage
+%    \renewcommand{\listtablename}{\tabellenverzeichnis}
+%    \listoftables
+%    \newpage TODO: Einkommentieren, wenn diese Arbeit fertig ist!
 %-----------------------------------
 % Abkürzungsverzeichnis
 %-----------------------------------
