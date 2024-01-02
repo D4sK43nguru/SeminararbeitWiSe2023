@@ -141,20 +141,10 @@
     description = {Standard der \ac{ITUT} für eine \gls{publicKey}-Infrastruktur zum erstellen digitaler Zertifikate . Im November 2020 als ISO/IEC 9594--8 aktualisiert worden}
 }
 
-\newglossaryentry{client}{
-    name = {Client},
-    description = {Ein Endpunkt in einem \gls{csm}, der Anfragen an einen \gls{server} sendet und auf dessen Antworten wartet, um Dienste, Ressourcen oder Daten zu erhalten}
-}
-
-\newglossaryentry{server}{
-    name = {Server},
-    description = {Ein Computer oder eine Software, die Anfragen von \glspl{client} empfängt, verarbeitet und darauf antwortet, indem sie Dienste, Ressourcen oder Daten bereitstellt}
-}
-
 \newglossaryentry{csm}{
     name = {Client-Server Modell},
     plural = {Client-Server Modelle},
-    description = {Ein Architekturmodell, bei dem eine Kommunikation zwischen einem \gls{client}, der Anfragen stellt, und einem \gls{server}, der diese Anfragen bearbeitet und Antworten liefert, etabliert ist}
+    description = {Client-Server ist eine Computerarchitektur, bei der ein Client, in der Regel ein Gerät oder Computer eines Benutzers, Dienste oder Ressourcen von einem zentralen Server anfordert. Der Server, bei dem es sich um einen leistungsstarken Computer oder ein Computernetz handelt, stellt dem Client die angeforderten Dienste oder Ressourcen zur Verfügung. Diese Architektur wird häufig in vernetzten Systemen verwendet und ermöglicht eine effiziente Verteilung von Ressourcen und Arbeitslast}
 }
 
 \newglossaryentry{osi}{
@@ -166,7 +156,7 @@
 \newglossaryentry{vertraulichkeit}{
     name = {Vertraulichkeit},
     plural = {Vertraulichkeiten},
-    description = {Daten dürfen nur von Personen verarbeitet werden, die dafür berechtigt sind}
+    description = {Vertraulichkeit ist eines der Schutzziele in der Informationssicherheit. Es bezieht sich darauf, dass Informationen nur von \glsdisp{autorisierung}{autorisierten} Personen oder Systemen eingesehen oder genutzt werden können. Hierdurch wird gewährleistet, dass sensible Daten vor unbefugtem Zugriff geschützt sind}
 }
 
 \newglossaryentry{verfuegbarkeit}{
@@ -176,27 +166,21 @@
 }
 
 \newglossaryentry{integritaet}{
-    name = {Integrit\"at},
-    plural = {Integrit\"aten},
-    description = {Die Gewährleistung zur Vollständigkeit und Unversehrtheit der Daten}
-}
-
-\newglossaryentry{authentizitaet}{
-    name = {Authentizit\"at},
-    plural = {Authentizit\"aten},
-    description = {Bezeichnet die Eigenschaft der Echtheit der Daten}
+    name = {Datenintegrität},
+    plural = {Datenintegritäten},
+    description = {Datenintegrität bezieht sich auf die Genauigkeit, Konsistenz und Zuverlässigkeit von Daten während ihres gesamten Lebenszyklus. Sie stellt sicher, dass Daten intakt und unverändert bleiben, frei von Fehlern, Korruption oder unbefugten Änderungen}
 }
 
 \newglossaryentry{authentifizierung}{
     name = {Authentifizierung},
     plural = {Authentifizierungen},
-    description = {Der Prozess der Überprüfung der Identität eines \gls{client}s, Gerätes oder Systems um sicherzustellen, dass sie tatsächlich diejenige Partei sind, für die sie sich ausgeben}
+    description = {Unter Authentifizierung versteht man die Überprüfung der Identität einer Person, eines Systems oder einer Einrichtung, die versucht, auf eine bestimmte Ressource oder einen Dienst zuzugreifen. Sie stellt sicher, dass nur autorisierte Benutzer Zugang erhalten und verhindert gleichzeitig den unbefugten Zugriff}
 }
 
 \newglossaryentry{autorisierung}{
     name = {Autorisierung},
     plural = {Autorisierungen},
-    description = {Der Prozess der Zuweisung von Berechtigungen und Zugriffsrechten an eine authentifizierte Partei, um festzulegen, welche Aktionen, Ressourcen oder Informationen sie nutzen oder verwalten darf}
+    description = {Autorisierung bezieht sich auf den Prozess der Gewährung oder Verweigerung des Zugangs zu bestimmten Ressourcen oder Funktionen auf der Grundlage der Identität, der Privilegien und der Berechtigungen des Benutzers}
 }
 
 \newglossaryentry{nonAbstreitbarkeit}{
@@ -208,7 +192,7 @@
 \newglossaryentry{handshake}{
     name = {Handshake},
     plural = {Handshakes},
-    description = {Ein Austausch von Nachrichten zwischen einem \gls{client} und einem \gls{server} zu Beginn einer \ac{TLS}-Verbindung, um die Parameter der sicheren Kommunikation zu vereinbaren und die Identität des \gls{server}s zu überprüfen}
+    description = {Ein Austausch von Nachrichten zwischen einem \glsdisp{csm}{Client} und einem Server zu Beginn einer \ac{TLS}-Verbindung, um die Parameter der sicheren Kommunikation zu vereinbaren und die Identität des Serverss zu überprüfen}
 }
 
 \newglossaryentry{Rainbow-Table}{
@@ -265,5 +249,5 @@
 
 \newglossaryentry{respekt}{
     name = {Respekt},
-    description = {In der Datensicherheit bedeutet Respekt, die Daten gemäß aller Sicherheitsrichtlinien und -protokolle zu verarbeiten und zu speichern. Dies beinhaltet es, die Daten vor dem Speichern zu verschlüsseln, die Anfragen zu \glsdisp{autorisierung}{autorisieren}, die \gls{integritaet} der Daten zu kontrollieren und die Datenübertragung und -zugriffe zu überwachen und zu kontrollieren}
+    description = {In der Datensicherheit bedeutet Respekt, die Daten gemäß aller Sicherheitsrichtlinien und -protokolle zu verarbeiten und zu speichern. Dies beinhaltet es, die Daten vor dem Speichern zu verschlüsseln, die Anfragen zu \glsdisp{autorisierung}{autorisieren}, die \gls{integritaet} zu kontrollieren und die Datenübertragung und -zugriffe zu überwachen und zu kontrollieren}
 }
