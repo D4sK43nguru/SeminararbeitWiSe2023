@@ -5,7 +5,9 @@
 
 ### Miscellaneous
 
+-  Merge branch &#x27;release/1.2.0&#x27; [[b837892](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b8378922cfdebb6004cb60782587e812f658d25d)]
 -  Merge branch &#x27;release/1.1.1&#x27; [[0ad5cf5](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0ad5cf517cbfe2b9290b064c5753d5e2b4213f65)]
+- 📝 Update CHANGELOG [[67e2625](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/67e2625ee605672144afc1b90005b6784c2699d5)]
 -  Merge branch &#x27;main&#x27; of https://github.com/D4sK43nguru/SeminararbeitWiSe2023 [[0d2e0a0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/0d2e0a0233180f87e1612d03e50d6aa6db513268)]
 -  Merge branch &#x27;release/1.1&#x27; [[b19c68e](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/b19c68ef00e263edf647affda57a1ab309cbc54e)]
 - 📝 Update CHANGELOG [[42572b0](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/42572b06b9365ba5f6234df3393df76709ef94d0)]
@@ -18,6 +20,26 @@
 - 📝 Update CHANGELOG [[c3c2aea](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/c3c2aeabc234f97cb6dcb6d9947ea751a841baef)]
 - 📝 Update CHANGELOG [[cdf9606](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/cdf960674ee1395fc989abcb87e27fb0bdbe6c62)]
 -  0.0.2 [[59a5b73](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/59a5b7364e7df4b56fe038f96adbfe3ae7b16b86)]
+
+
+<a name="1.1.2"></a>
+## 1.1.2 (2024-01-02)
+
+### Added
+
+- ✨ Add work about productivity [[9bad3d2](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/9bad3d20c7045ecb28cc9a889e2a04dae6cd403a)]
+
+### Fixed
+
+- ✏️ Rewrite conclusion to include tiDoc-Ttile [[6c50fef](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/6c50fefd4f1ceba56fd49b5bfec94b53f5f30f2e)]
+
+### Miscellaneous
+
+-  Merge branch &#x27;feature/add-productivity&#x27; into develop [[32df92c](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/32df92c27e72dc3f676c34b84643e16cc8db5c6d)]
+-  Merge branch &#x27;develop&#x27; of https://github.com/D4sK43nguru/SeminararbeitWiSe2023 into develop [[4ef67ae](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/4ef67aec904ad06338c3a99b028a0ba6581b4cc5)]
+-  Merge branch &#x27;feature/add-question-to-faziit&#x27; into develop [[7c18a37](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/7c18a37b448f1eb43d66200047f6d45ed40851f7)]
+-  Merge branch &#x27;release/1.1.1&#x27; into develop [[d5cdc1c](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/d5cdc1c0df9801caf5f5aec9dddc9f77c93c0186)]
+-  Merge branch &#x27;feature/add-chapter-2&#x27; into develop [[6366ee6](https://github.com/D4sK43nguru/SeminararbeitWiSe2023/commit/6366ee6f1f839a3d7c1c6fa5ed6886b3d3675c8d)]
 
 
 <a name="1.1.1"></a>
