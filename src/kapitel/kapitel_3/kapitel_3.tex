@@ -1,7 +1,7 @@
 \newpage
 \section[Zero-Trust Architektur im Detail]{\ac{zta} im Detail}\label{sec:zta-im-detail}
 Da in einer \ac{zta} keinem Gerät und keiner Anwendung vertraut wird, aber alle unterstützt werden, sind verschiedene Maßnahmen notwendig um die erwünschte Sicherheit zu garantieren.
-Dies geschieht durch regelmäßiges Überprüfen der \gls{authentizitaet} und \gls{autorisierung} der Systeme.\autocite[\vglf][\pagef 3]{dsilvia-2021}
+Dies geschieht durch regelmäßiges Überprüfen der \glsdisp{authentifizierung}{Authentizität} und \gls{autorisierung} der Systeme.\autocite[\vglf][\pagef 3]{dsilvia-2021}
 
 \subsection{Komponenten und Aufbau von Zero-Trust}\label{subsec:komponenten-und-aufbau-von-zero-trust}
 Jede \ac{zta} wird durch drei Eigenschaften definiert.
@@ -9,7 +9,7 @@ Diese stellen sicher, dass (\romannumeral 1) auf alle Ressourcen unabhängig von
 
 \subsubsection{Komponenten einer Zero-Trust Architektur}
 Es gibt verschiedene Methoden, eine \ac{zta} einzurichten, von denen viele das Konzept teilen, die Kontrolle nahe an den Anwendungen und Nutzern zu halten anstatt sie in der Netzwerkinfrastruktur auszulagern.\autocite[\vglf][\pagef 4]{buck-2021}
-Drei der Grundmethoden einer \ac{zta} sind \glsdisp{authentizitaet}{Anwendungsauthentifizierung}, \glsdisp{authentizitaet}{Gerätauthentifizierung} und Vertrauen, da eine \ac{zta} im Gegensatz zu anderen Sicherheitsinfrastrukturen die \gls{authentizitaet} regelmäßig überprüft, die Nutzergeräte überprüft und Widersprüchlichkeiten in Anwendungen der Nutzer überwacht und erkennt.\autocite[\vglf][\pagef 3]{dsilvia-2021}
+Drei der Grundmethoden einer \ac{zta} sind \glsdisp{authentifizierung}{Anwendungsauthentifizierung}, \glsdisp{authentifizierung}{Gerätauthentifizierung} und Vertrauen, da eine \ac{zta} im Gegensatz zu anderen Sicherheitsinfrastrukturen die \glsdisp{authentifizierung}{Authentizität} regelmäßig überprüft, die Nutzergeräte überprüft und Widersprüchlichkeiten in Anwendungen der Nutzer überwacht und erkennt.\autocite[\vglf][\pagef 3]{dsilvia-2021}
 
 \ac{zt} sollte nicht als einzelne Technologie gesehen werden, sondern stellt durch viele Anforderungen, Kontrollen und Prinzipien einen umfassenden Schutz dar, welcher selbst bei verschwimmender Grenze zwischen Privatem und Arbeit nicht minder wirkt.\autocite[\vglf][Was sind die Komponenten von Zero Trust]{akamai:online}
 
@@ -20,9 +20,9 @@ Eine solche Evaluation kann aus den folgenden, von Horne und Nair dargestellten,
 \begin{enumerate}
     \item Vertrauensfaktoren, darunter unter anderem
     \begin{itemize}
-        \item \glsdisp{authentizitaet}{Nutzerauthentifizierung},
+        \item \glsdisp{authentifizierung}{Nutzerauthentifizierung},
         \item Nutzerrolle oder -profil,
-        \item \glsdisp{authentizitaet}{Gerätauthentifizierung},
+        \item \glsdisp{authentifizierung}{Gerätauthentifizierung},
         \item Geräteart und -status,
         \item IP-Adresse, \bzw Ort,
         \item Details der Zugriffsanfrage,
@@ -53,8 +53,8 @@ Hierfür werden die folgenden Annahmen genommen:\autocite[\vglf][\pagef 3]{dsilv
     \item Mit dem aktuellen Trend, dass in Unternehmen \ac{byod} eingeführt wird, wird davon ausgegangen, dass Geräte, die mit dem Netzwerk verbunden sind, keine Instanz des Unternehmens sind, da jedes Gerät manipuliert werden kann.
     \item Ressourcen sind niemals vertrauenswürdig, \dah vom Standpunkt der Sicherheit aus gesehen muss jede Ressource kontinuierlich bewertet werden und darf nur solange genutzt werden, wie sie benötigt wird.
     \item Cloud-Dienste sind ein wesentlicher Bestandteil jedes Unternehmensnetzwerkes geworden und verdeutlichen, dass nicht alle Unternehmensressourcen innerhalb der Unternehmensinfrastruktur liegen.
-    \item Alle Verbindungsanfragen von außerhalb des Unternehmens, wie \zb Remote Desktop, müssen \glsdisp{autorisierung}{autorisiert} und \glsdisp{authentizitaet}{authentifiziert} werden.
-    Alle Daten müssen mit Respekt, \gls{vertraulichkeit}, \gls{integritaet} und \glsdisp{authentizitaet}{Quellenauthentifizierung} übertragen werden.
+    \item Alle Verbindungsanfragen von außerhalb des Unternehmens, wie \zb Remote Desktop, müssen \glsdisp{autorisierung}{autorisiert} und \glsdisp{authentifizierung}{authentifiziert} werden.
+    Alle Daten müssen mit \gls{respekt}, \gls{vertraulichkeit}, \gls{integritaet} und \glsdisp{authentifizierung}{Quellenauthentifizierung} übertragen werden.
     \item Ausgehend der obigen Annahmen ist es essenziell, dass alle Ressourcen und Kommunikation zwischen dem Unternehmen und externer Infrastruktur einer ständigen Sicherheitsstrategie unterliegen müssen.
 \end{itemize}
 
